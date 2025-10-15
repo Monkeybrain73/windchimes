@@ -1,0 +1,18 @@
+[
+{
+	"enabled": true,
+    "op": "addmerge",
+    "path": "/ingredient/allowedVariants",
+    "value": ["brass"],
+    "file": "game:recipes/smithing/rod.json",
+    "side": "server"
+},
+{
+	"enabled": true,
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["brass"],
+    "file": "game:itemtypes/part/rod.json",
+    "side": "server"
+}
+]

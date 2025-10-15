@@ -1,0 +1,235 @@
+[
+	{
+		"name": "bamboo-brown",
+		"ingredientPattern": "_A_,_B_,DCD",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "item", "code": "game:bamboostakes" },
+			"D": { "type": "item", "code": "game:bamboostakes", "quantity": 2 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-bamboo-brown" }
+	},
+	{
+		"name": "bamboo-green",
+		"ingredientPattern": "_A_,_B_,DCD",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "block", "code": "game:sapling-greenbamboo-free" },
+			"D": { "type": "block", "code": "game:sapling-greenbamboo-free", "quantity": 2 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-bamboo-green" }
+	},
+	{
+		"name": "brass",
+		"ingredientPattern": "_A_,_B_,C_C",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "item", "code": "game:rod-brass", "quantity": 2 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-brass" }
+	},
+	{
+		"name": "copper",
+		"ingredientPattern": "_A_,_B_,C_C",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "item", "code": "game:rod-copper", "quantity": 2 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-copper" }
+	},
+	{
+		"name": "wood",
+		"ingredientPattern": "_A_,_B_,CDC",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "item", "code": "game:stick", "quantity": 2 },
+			"D": { "type": "item", "code": "game:stick", "quantity": 1 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-wood" }
+	},
+	{
+		"name": "crystal-smokyquartz",
+		"ingredientPattern": "_A_,HBI,CDC",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "block", "code": "game:crystal-smokyquartz-*", "quantity": 2 },
+			"D": { "type": "block", "code": "game:crystal-smokyquartz-*" },
+			"H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 10 },
+			"I": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 20 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-crystal-smokyquartz" }
+	},
+	{
+		"name": "smokyquartz",
+		"ingredientPattern": "_A_,HBI,CDC",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "item", "code": "game:smokyquartz", "quantity": 2 },
+			"D": { "type": "item", "code": "game:smokyquartz" },
+			"H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 10 },
+			"I": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 20 }
+		},
+		"width": 3,
+		"height": 3,
+		"recipeGroup": 1,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-crystal-smokyquartz" }
+	},
+	{
+		"name": "crystal-rosequartz",
+		"ingredientPattern": "_A_,HBI,CDC",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "block", "code": "game:crystal-rosequartz-*", "quantity": 2 },
+			"D": { "type": "block", "code": "game:crystal-rosequartz-*" },
+			"H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 10 },
+			"I": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 20 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-crystal-rosequartz" }
+	},
+	{
+		"name": "rosequartz",
+		"ingredientPattern": "_A_,HBI,CDC",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "item", "code": "game:rosequartz", "quantity": 2 },
+			"D": { "type": "item", "code": "game:rosequartz" },
+			"H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 10 },
+			"I": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 20 }
+		},
+		"width": 3,
+		"height": 3,
+		"recipeGroup": 1,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-crystal-rosequartz" }
+	},
+	{
+		"name": "crystal-milkyquartz",
+		"ingredientPattern": "_A_,HBI,CDC",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "block", "code": "game:crystal-milkyquartz-*", "quantity": 2 },
+			"D": { "type": "block", "code": "game:crystal-milkyquartz-*" },
+			"H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 10 },
+			"I": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 20 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-crystal-milkyquartz" }
+	},
+	{
+		"name": "quartz",
+		"ingredientPattern": "_A_,HBI,CDC",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "item", "code": "game:ore-quartz", "quantity": 2 },
+			"D": { "type": "item", "code": "game:ore-quartz" },
+			"H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 10 },
+			"I": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 20 }
+		},
+		"width": 3,
+		"height": 3,
+		"recipeGroup": 1,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-crystal-milkyquartz" }
+	},
+	{
+		"name": "crystal-amethyst",
+		"ingredientPattern": "_A_,HBI,CDC",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "block", "code": "game:crystal-amethyst-*", "quantity": 2 },
+			"D": { "type": "block", "code": "game:crystal-amethyst-*" },
+			"H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 10 },
+			"I": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 20 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-crystal-amethyst" }
+	},
+	{
+		"name": "amethyst",
+		"ingredientPattern": "_A_,HBI,CDC",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "item", "code": "game:amethyst", "quantity": 2 },
+			"D": { "type": "item", "code": "game:amethyst" },
+			"H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 10 },
+			"I": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 20 }
+		},
+		"width": 3,
+		"height": 3,
+		"recipeGroup": 1,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-crystal-amethyst" }
+	},
+	{
+		"name": "crystal-olivine",
+		"ingredientPattern": "_A_,HBI,CDC",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "block", "code": "game:crystal-olivine-*", "quantity": 2 },
+			"D": { "type": "block", "code": "game:crystal-olivine-*" },
+			"H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 10 },
+			"I": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 20 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-crystal-olivine" }
+	},
+	{
+		"name": "olivine",
+		"ingredientPattern": "_A_,HBI,CDC",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "item", "code": "game:ore-olivine", "quantity": 2 },
+			"D": { "type": "item", "code": "game:ore-olivine" },
+			"H": { "type": "item", "code": "game:hammer-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 10 },
+			"I": { "type": "item", "code": "game:chisel-*", "allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] , "isTool": true, "toolDurabilityCost": 20 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"recipeGroup": 1,
+		"output": { "type": "block", "code": "windchimes:windchime-crystal-olivine" }
+	}
+]

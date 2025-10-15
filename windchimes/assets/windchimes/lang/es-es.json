@@ -1,0 +1,24 @@
+{
+    "// Wind Chimes v1.3.0 || Enlace de VS ModDB: https://mods.vintagestory.at/windchimes ": "",
+    "// Traducido por C4BR3R4 || Última Modificación: 30/08/2025 || Registro de Cambios: https://c4br3r4.es/index.php?topic=1382.0 ": "",
+
+	"windchimes:block-windchime-bamboo-brown": "Campanilla de Viento de Bambú Dorado",
+	"windchimes:block-windchime-bamboo-green": "Campanilla de Viento de Bambú Verde",
+	"windchimes:block-windchime-wood": "Campanilla de Viento de Madera",
+	"windchimes:block-windchime-brass": "Campanilla de Viento de Latón",
+	"windchimes:block-windchime-crystal-milkyquartz": "Campanilla de Viento de Vidrio Cuarzoso Lechoso",
+	"windchimes:block-windchime-crystal-rosequartz": "Campanilla de Viento de Vidrio Cuarzoso Rosa",
+	"windchimes:block-windchime-crystal-smokyquartz": "Campanilla de Viento de Vidrio Cuarzoso Ahumado",
+	"windchimes:block-windchime-crystal-amethyst": "Campanilla de Viento de Amatista",
+	"windchimes:block-windchime-crystal-olivine": "Campanilla de Viento de Olivino",
+	"windchimes:block-windchime-bone": "Campanilla de Viento de Hueso",
+	"windchimes:block-windchime-glass": "Campanilla de Viento de Vidrio",
+
+	"game:item-rod-brass": "Varilla de Latón",
+
+
+	"windchimes:block-windchime-bamboo-fountain": "Campanilla de Viento de Bambú Fuente",
+	"windchimes:block-windchime-bamboo-black": "Campanilla de Viento de Bambú Negro",
+	"windchimes:block-windchime-bamboo-moso": "Campanilla de Viento de Bambú Musgoso"
+
+}

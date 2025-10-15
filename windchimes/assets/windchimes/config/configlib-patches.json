@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "patches": {},
+  "settings": [
+    {
+      "code": "windchime_main_volume",
+      "name": "windchime-main-volume",
+      "type": "float",
+      "ingui": "windchimes:setting-main-volume",
+      "comment": "windchimes:setting-comment-main-volume",
+      "default": 1.5,
+      "clientSide": true,
+      "range": {
+        "min": 0.0,
+        "max": 5.0,
+        "step": 0.1
+      }
+    },
+    {
+      "code": "windchime_bamboo_volume",
+      "name": "windchime-bamboo-volume",
+      "type": "float",
+      "ingui": "windchimes:setting-bamboo-volume",
+      "comment": "windchimes:setting-comment-bamboo-volume",
+      "default": 0.5,
+      "clientSide": true,
+      "range": {
+        "min": 0.1,
+        "max": 3.0,
+        "step": 0.1
+      }
+    },
+    {
+      "code": "windchime_wood_vvolume",
+      "name": "windchime-wood-volume",
+      "type": "float",
+      "ingui": "windchimes:setting-wood-volume",
+      "comment": "windchimes:setting-comment-wood-volume",
+      "default": 0.5,
+      "clientSide": true,
+      "range": {
+        "min": 0.1,
+        "max": 3.0,
+        "step": 0.1
+      }
+    },
+    {
+      "code": "windchime_brass_volume",
+      "name": "windchime-brass-volume",
+      "type": "float",
+      "ingui": "windchimes:setting-brass-volume",
+      "comment": "windchimes:setting-comment-brass-volume",
+      "default": 0.5,
+      "clientSide": true,
+      "range": {
+        "min": 0.1,
+        "max": 3.0,
+        "step": 0.1
+      }
+    },
+    {
+      "code": "windchime_copper_volume",
+      "name": "windchime-copper-volume",
+      "type": "float",
+      "ingui": "windchimes:setting-copper-volume",
+      "comment": "windchimes:setting-comment-copper-volume",
+      "default": 0.5,
+      "clientSide": true,
+      "range": {
+        "min": 0.1,
+        "max": 3.0,
+        "step": 0.1
+      }
+    },
+    {
+      "code": "windchime_crystal_volume",
+      "name": "windchime-crystal-volume",
+      "type": "float",
+      "ingui": "windchimes:setting-crystal-volume",
+      "default": 0.5,
+      "clientSide": true,
+      "range": {
+        "min": 0.1,
+        "max": 3.0,
+        "step": 0.1
+      }
+    },
+    {
+      "code": "windchime_min_volume",
+      "name": "windchime-min-volume",
+      "type": "float",
+      "ingui": "windchimes:setting-min-volume",
+      "comment": "windchimes:setting-comment-min-volume",
+      "default": 0.05,
+      "clientSide": true,
+      "range": {
+        "min": 0.01,
+        "max": 1.0,
+        "step": 0.01
+      }
+    },
+    {
+      "code": "windchime_indoor_volume",
+      "name": "windchime-indoor-volume",
+      "type": "float",
+      "ingui": "windchimes:setting-indoor-volume",
+      "comment": "windchimes:setting-comment-indoor-volume",
+      "default": 0.1,
+      "clientSide": true,
+      "range": {
+        "min": 0.01,
+        "max": 1.0,
+        "step": 0.01
+      }
+    },
+    {
+      "code": "windchime_max_distance",
+      "name": "windchime-max-distance",
+      "type": "float",
+      "ingui": "windchimes:setting-max-distance",
+      "comment": "windchimes:setting-comment-max-distance",
+      "default": 16.0,
+      "clientSide": true,
+      "range": {
+        "min": 1.0,
+        "max": 32.0,
+        "step": 1.0
+      }
+    },
+    {
+      "code": "windchime_falloff_exponent",
+      "name": "windchime-falloff-exponent",
+      "type": "float",
+      "ingui": "windchimes:setting-falloff-exponent",
+      "comment": "windchimes:setting-comment-falloff-exponent",
+      "default": 2.5,
+      "clientSide": true,
+      "range": {
+        "min": 0.5,
+        "max": 5.0,
+        "step": 0.1
+      }
+    },
+    {
+      "type": "separator",
+      "title": "windchimes:setting-category-server-debug",
+      "collapsible": true
+    },
+    {
+      "code": "windchime_extended_debug_info",
+      "name": "windchime-extended-debug-info",
+      "type": "boolean",
+      "ingui": "windchimes:setting-extended-debug-info",
+      "comment": "windchimes:setting-comment-extended-debug-info",
+      "default": false,
+    }
+  ]
+}

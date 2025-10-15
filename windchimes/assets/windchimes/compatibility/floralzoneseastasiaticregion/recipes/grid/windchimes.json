@@ -1,0 +1,59 @@
+[
+	{
+		"name": "bamboo-black",
+		"ingredientPattern": "_A_,_B_,DCD",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "block", "code": "floralzoneseastasiaticregion:sapling-phyllostachysnigra-free" },
+			"D": { "type": "block", "code": "floralzoneseastasiaticregion:sapling-phyllostachysnigra-free", "quantity": 2 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-bamboo-black" }
+	},
+	{
+		"name": "bamboo-moso",
+		"ingredientPattern": "_A_,_B_,DCD",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "block", "code": "floralzoneseastasiaticregion:sapling-phyllostachysedulis-free" },
+			"D": { "type": "block", "code": "floralzoneseastasiaticregion:sapling-phyllostachysedulis-free", "quantity": 2 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-bamboo-moso" }
+	},
+	{
+		"name": "bamboo-golden",
+		"ingredientPattern": "_A_,_B_,DCD",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "block", "code": "floralzoneseastasiaticregion:sapling-phyllostachysaurea-free" },
+			"D": { "type": "block", "code": "floralzoneseastasiaticregion:sapling-phyllostachysaurea-free", "quantity": 2 }
+		},
+		"width": 3,
+		"height": 3,
+		"recipeGroup": 1,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-bamboo-brown" }
+	},
+	{
+		"name": "bamboo-fountain",
+		"ingredientPattern": "_A_,_B_,DCD",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:rope" },
+			"B": { "type": "item", "code": "game:plank-*" },
+			"C": { "type": "block", "code": "floralzoneseastasiaticregion:tallplant-fargesianitida-land-harvested-free", "quantity": 2 },
+			"D": { "type": "block", "code": "floralzoneseastasiaticregion:tallplant-fargesianitida-land-harvested-free", "quantity": 3 }
+		},
+		"width": 3,
+		"height": 3,
+		"shapeless": false,
+		"output": { "type": "block", "code": "windchimes:windchime-bamboo-fountain" }
+	}
+]

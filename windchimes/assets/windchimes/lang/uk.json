@@ -1,0 +1,23 @@
+{
+	"game:tabname-windchimes": "Wind Chimes",
+
+	"windchimes:block-windchime-bamboo-brown": "Вітряний дзвіночок з бамбуку",
+	"windchimes:block-windchime-bamboo-green": "Вітряний дзвіночок з зеленого бамбуку",
+	"windchimes:block-windchime-wood": "Вітряний дзвіночок із дерева",
+	"windchimes:block-windchime-brass": "Вітряний дзвіночок з латуні",
+	"windchimes:block-windchime-crystal-milkyquartz": "Вітряний дзвіночок з молочного кришталю",
+	"windchimes:block-windchime-crystal-rosequartz": "Вітряний дзвіночок з рожевого кришталю",
+	"windchimes:block-windchime-crystal-smokyquartz": "Вітряний дзвіночок з димчастого кришталю",
+	"windchimes:block-windchime-crystal-amethyst": "Вітряний дзвіночок з аметистового кришталю",
+	"windchimes:block-windchime-crystal-olivine": "Вітряний дзвіночок з олівінового кришталю",
+	"windchimes:block-windchime-bone": "Вітряний дзвіночок з кісток",
+	"windchimes:block-windchime-glass": "Вітряний дзвіночок із скла",
+
+	"game:item-rod-brass": "Прут із латуні",
+
+
+	"windchimes:block-windchime-bamboo-fountain": "Вітряний дзвіночок з фонтанного бамбуку",
+	"windchimes:block-windchime-bamboo-black": "Вітряний дзвіночок з чорного бамбуку",
+	"windchimes:block-windchime-bamboo-moso": "Вітряний дзвіночок з бамбуку мосо"
+
+}

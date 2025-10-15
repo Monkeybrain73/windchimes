@@ -1,0 +1,13 @@
+[
+	{
+		"enabled": true,
+		"side": "server",
+		"file": "game:config/remaps.json",
+		"path": "/windchimes:windchimesv1.0-1.1",
+		"value": [
+			"/bir remapq windchimes:windchime-bamboo-brown windchimes:windchime-bamboo force",
+			"/bir remapq windchimes:windchime-bamboo-green windchimes:windchime-bamboogreen force",
+			"/bir remapq windchimes:windchime-crystal-smokyquartz windchimes:windchime-crystal force"
+		]
+	}
+]

@@ -1,0 +1,81 @@
+[
+{
+	"enabled": true,
+	"side": "server",
+	"op": "addmerge",
+	"path": "/variantgroups/1/states",
+	"file": "windchimes:blocktypes/windchime.json",
+	"value": [ "fountain", "black", "moso" ],
+	"dependsOn": [{ "modId": "floralzoneseastasiaticregion" }]
+},
+{
+	"enabled": true,
+	"side": "server",
+	"op": "addmerge",
+	"path": "/shapeByType",
+	"file": "windchimes:blocktypes/windchime.json",
+	"value": {
+		"*-bamboo-fountain": { "base": "block/bamboo-fountain",
+			"alternates": [
+				{ "base": "block/bamboo-fountain", "rotateY": 22.5 },
+				{ "base": "block/bamboo-fountain", "rotateY": 45 },
+				{ "base": "block/bamboo-fountain", "rotateY": 67.5 },
+				{ "base": "block/bamboo-fountain", "rotateY": 90 },
+				{ "base": "block/bamboo-fountain", "rotateY": 112.5 },
+				{ "base": "block/bamboo-fountain", "rotateY": 135 },
+				{ "base": "block/bamboo-fountain", "rotateY": 157.5 },
+				{ "base": "block/bamboo-fountain", "rotateY": 180 },
+				{ "base": "block/bamboo-fountain", "rotateY": 202.5 },
+				{ "base": "block/bamboo-fountain", "rotateY": 225 },
+				{ "base": "block/bamboo-fountain", "rotateY": 247.5 },
+				{ "base": "block/bamboo-fountain", "rotateY": 270 }
+			]
+		}
+	},
+	"dependsOn": [{ "modId": "floralzoneseastasiaticregion" }]
+},
+{
+	"enabled": true,
+	"side": "server",
+	"op": "move",
+	"frompath": "/shapeByType/*-bamboo-*",
+	"path": "/temp",
+	"file": "windchimes:blocktypes/windchime.json",
+	"dependsOn": [{ "modId": "floralzoneseastasiaticregion" }]
+},
+{
+	"enabled": true,
+	"side": "server",
+	"op": "move",
+	"frompath": "/temp",
+	"path": "/shapeByType/*-bamboo-*",
+	"file": "windchimes:blocktypes/windchime.json",
+	"dependsOn": [{ "modId": "floralzoneseastasiaticregion" }]
+},
+{
+	"enabled": true,
+	"side": "server",
+	"op": "addmerge",
+	"path": "/texturesByType",
+	"file": "windchimes:blocktypes/windchime.json",
+	"value": {
+		"*-bamboo-fountain": {
+			"stalk": { "base": "floralzoneseastasiaticregion:block/plant/bamboo/fargesianitida-stalk" },
+			"material": { "base": "game:block/plant/bamboo/stem-brown" },
+			"wood":  { "base": "game:block/wood/charred" },
+			"rope": { "base": "game:item/resource/rope" }
+		},
+		"*-bamboo-black": {
+			"material": { "base": "floralzoneseastasiaticregion:block/plant/bamboo/phyllostachysnigra" },
+			"wood":  { "base": "game:block/wood/charred" },
+			"rope": { "base": "game:item/resource/rope" }
+		},
+		"*-bamboo-moso": {
+			"material": { "base": "floralzoneseastasiaticregion:block/plant/bamboo/phyllostachysedulis" },
+			"wood":  { "base": "game:block/wood/charred" },
+			"rope": { "base": "game:item/resource/rope" }
+		}
+	},
+	"dependsOn": [{ "modId": "floralzoneseastasiaticregion" }]
+}
+]

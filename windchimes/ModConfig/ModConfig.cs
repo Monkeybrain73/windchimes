@@ -1,0 +1,85 @@
+﻿namespace windchimes
+{
+    public class Configs
+    {
+        public static ServerConfig SConfig { get; set; } = new();
+        public static ClientConfig CConfig { get; set; } = new();
+
+        private const string ConfigNameServer = "windchimes-server.json";
+        private const string ConfigNameClient = "windchimes-client.json";
+
+        #region ServerConfig
+        public class ServerConfig
+        {
+            public bool EnableDebugLogging { get; set; } = false;
+        }
+
+        public static void TryLoadServerConfig(ICoreServerAPI api)
+        {
+            try
+            {
+                SConfig = api.LoadModConfig<ServerConfig>(ConfigNameServer);
+                if (SConfig == null)
+                {
+                    SConfig = new ServerConfig();
+                    api.Logger.VerboseDebug("[WindChimes] Config file not found, creating a new one...");
+                }
+                api.StoreModConfig(SConfig, ConfigNameServer);
+                api.Logger.Event("[WindChimes] Server Config loaded");
+
+                Core.DebugUtil.LogConfig(api, "Loaded server config values", Configs.SConfig);
+            }
+            catch (Exception ex)
+            {
+                api.Logger.Error("[WindChimes] Failed to load config, you probably made a typo:");
+                api.Logger.Error(ex);
+                SConfig = new ServerConfig();
+            }
+        }
+        #endregion
+
+        #region ClientConfig
+        public class ClientConfig
+        {
+            public float WindChimeMainVolumeMultiplier { get; set; } = 1.0f;
+            public float BambooChimeVolume { get; set; } = 0.5f;
+            public float WoodChimeVolume { get; set; } = 0.5f;
+            public float BrassChimeVolume { get; set; } = 0.5f;
+            public float CopperChimeVolume { get; set; } = 0.5f;
+            public float CrystalChimeVolume { get; set; } = 0.5f;
+            public float WindChimeMinVolume { get; set; } = 0.05f;
+            public float WindChimeIndoorVolume { get; set; } = 0.1f; // Volume multiplier when player is indoors
+            public float WindChimeMaxDistance { get; set; } = 16f; // Max distance at which chimes can be heard
+            public float WindChimeFalloffExponent { get; set; } = 2.5f; // Exponent for distance attenuation curve (1.0 = linear, 2.0 = quadratic, etc.)
+            // public float WindChimePitchFadeAmount { get; set; } = 0.25f; // Max pitch variation (+/-) based on distance
+            // public float WindChimeDistanceFactor { get; set; } = 0.1f; // Volume decreases by this factor per block of distance
+            // public float WindChimeObstructionFactor { get; set; } = 0.5f; // Volume decreases by this factor per obstruction (wall, roof) between player and chime
+            // public float WindChimeMinWindSpeed { get; set; } = 0.2f; // Minimum wind speed for chimes to make sound
+            // public float WindChimeMaxWindSpeed { get; set; } = 1.5f; // Wind speed at which chimes reach max volume
+        }
+
+        public static void TryLoadClientConfig(ICoreClientAPI api)
+        {
+            try
+            {
+                CConfig = api.LoadModConfig<ClientConfig>(ConfigNameClient);
+                if (CConfig == null)
+                {
+                    CConfig = new ClientConfig();
+                    api.Logger.VerboseDebug("[WindChimes] Config file not found, creating a new one...");
+                }
+                api.StoreModConfig(CConfig, ConfigNameClient);
+                api.Logger.Event("[WindChimes] Client Config loaded");
+                Core.DebugUtil.LogConfig(api, "Loaded client config values", Configs.CConfig);
+            }
+            catch (Exception ex)
+            {
+                api.Logger.Error("[WindChimes] Failed to load config, you probably made a typo:");
+                api.Logger.Error(ex);
+                CConfig = new ClientConfig();
+            }
+        }
+        #endregion
+
+    }
+}

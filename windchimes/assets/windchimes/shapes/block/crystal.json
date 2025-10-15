@@ -1,0 +1,345 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"material": "game:block/glass/quartzglass",
+		"wood": "game:block/metal/lantern/blackbronze",
+		"rope": "game:item/resource/rope"
+	},
+	"elements": [
+		{
+			"name": "Origin",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 0.0, 0.0, 0.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "rope",
+					"from": [ 7.5, 14.0, 7.5 ],
+					"to": [ 7.5, 14.0, 7.5 ],
+					"rotationOrigin": [ 8.0, 14.0, 8.0 ],
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "rope1",
+							"from": [ 0.0, 0.0, 0.0 ],
+							"to": [ 1.0, 3.0, 1.0 ],
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 1.0, 3.0 ], "windMode": [9,9,9,9], "windData": [0,1,1,0] },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 1.0, 3.0 ], "windMode": [9,9,9,9], "windData": [0,1,1,0] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 1.0, 3.0 ], "windMode": [9,9,9,9], "windData": [0,0,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 1.0, 3.0 ], "windMode": [9,9,9,9], "windData": [0,0,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [9,9,9,9], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [9,9,9,9] }
+							},
+							"children": [
+								{
+									"name": "plate",
+									"from": [ -3.0, -1.0, -3.0 ],
+									"to": [ 4.0, 0.0, 4.0 ],
+									"rotationOrigin": [ -3.0, -1.0, -3.0 ],
+									"faces": {
+										"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "windMode": [9,9,9,9] },
+										"east": { "texture": "#wood", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "windMode": [9,9,9,9] },
+										"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "windMode": [9,9,9,9] },
+										"west": { "texture": "#wood", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "windMode": [9,9,9,9] },
+										"up": { "texture": "#wood", "uv": [ 1.5, 1.5, 14.5, 14.5 ], "autoUv": false, "windMode": [9,9,9,9] },
+										"down": { "texture": "#wood", "uv": [ 1.5, 1.5, 14.5, 14.5 ], "autoUv": false, "windMode": [9,9,9,9] }
+									},
+									"children": [
+										{
+											"name": "chime1",
+											"from": [ 1.5, 0.0, 1.5 ],
+											"to": [ 1.5, 0.0, 1.5 ],
+											"rotationOrigin": [ 1.5, 0.0, 1.5 ],
+											"faces": {
+											},
+											"children": [
+												{
+													"name": "string",
+													"from": [ -0.1, -1.0, -0.1 ],
+													"to": [ 0.1, 0.5, 0.1 ],
+													"faces": {
+														"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "windMode": [10,10,10,10] }
+													},
+													"children": [
+														{
+															"name": "quartz1",
+															"from": [ -0.65, -5.0, -0.65 ],
+															"to": [ 0.95, 0.0, 0.95 ],
+															"rotationOrigin": [ -0.8, -5.0, -0.8 ],
+															"renderPass": 3,
+															"faces": {
+																"north": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 5.0 ], "windMode": [10,10,10,10] },
+																"east": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 5.0 ], "windMode": [10,10,10,10] },
+																"south": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 5.0 ], "windMode": [10,10,10,10] },
+																"west": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 5.0 ], "windMode": [10,10,10,10] },
+																"up": { "texture": "#material", "uv": [ 8.0, 14.0, 9.9, 15.9 ], "autoUv": false, "windMode": [10,10,10,10] },
+																"down": { "texture": "#material", "uv": [ 8.0, 14.0, 10.0, 16.0 ], "autoUv": false, "windMode": [10,10,10,10] }
+															}
+														},
+														{
+															"name": "quartz6",
+															"from": [ -0.64, -4.7, -0.59 ],
+															"to": [ 0.91, -3.7, 0.61 ],
+															"rotationOrigin": [ -0.8, -4.7, -0.8 ],
+															"rotationX": 45.0,
+															"renderPass": 3,
+															"faces": {
+																"north": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "windMode": [10,10,10,10] },
+																"east": { "texture": "#material", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [10,10,10,10] },
+																"south": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "windMode": [10,10,10,10] },
+																"west": { "texture": "#material", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [10,10,10,10] },
+																"up": { "texture": "#material", "uv": [ 8.0, 14.0, 9.9, 15.9 ], "autoUv": false, "windMode": [10,10,10,10] },
+																"down": { "texture": "#material", "uv": [ 8.0, 14.0, 10.0, 16.0 ], "autoUv": false, "windMode": [10,10,10,10] }
+															}
+														}
+													]
+												}
+											]
+										},
+										{
+											"name": "chime2",
+											"from": [ 5.5, 0.0, 1.5 ],
+											"to": [ 5.5, 0.0, 1.5 ],
+											"rotationOrigin": [ 5.5, 0.0, 1.5 ],
+											"rotationY": -15.0,
+											"faces": {
+											},
+											"children": [
+												{
+													"name": "string2",
+													"from": [ -0.1, -1.4, -0.1 ],
+													"to": [ 0.1, 0.5, 0.1 ],
+													"faces": {
+														"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "windMode": [10,10,10,10] }
+													},
+													"children": [
+														{
+															"name": "quartz2",
+															"from": [ -0.65, -7.0, -0.65 ],
+															"to": [ 0.95, 0.0, 0.95 ],
+															"rotationOrigin": [ -0.8, -7.0, -0.8 ],
+															"renderPass": 3,
+															"faces": {
+																"north": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 7.0 ], "windMode": [10,10,10,10] },
+																"east": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 7.0 ], "windMode": [10,10,10,10] },
+																"south": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 7.0 ], "windMode": [10,10,10,10] },
+																"west": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 7.0 ], "windMode": [10,10,10,10] },
+																"up": { "texture": "#material", "uv": [ 8.0, 14.0, 9.9, 15.9 ], "autoUv": false, "windMode": [10,10,10,10] },
+																"down": { "texture": "#material", "uv": [ 8.0, 14.0, 10.0, 16.0 ], "autoUv": false, "windMode": [10,10,10,10] }
+															}
+														},
+														{
+															"name": "quartz7",
+															"from": [ -0.66, -6.7, -0.59 ],
+															"to": [ 0.94, -5.7, 0.61 ],
+															"rotationOrigin": [ -0.8, -6.7, -0.8 ],
+															"rotationX": 45.0,
+															"renderPass": 3,
+															"faces": {
+																"north": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "windMode": [10,10,10,10] },
+																"east": { "texture": "#material", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [10,10,10,10] },
+																"south": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "windMode": [10,10,10,10] },
+																"west": { "texture": "#material", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [10,10,10,10] },
+																"up": { "texture": "#material", "uv": [ 8.0, 14.0, 9.9, 15.9 ], "autoUv": false, "windMode": [10,10,10,10] },
+																"down": { "texture": "#material", "uv": [ 8.0, 14.0, 10.0, 16.0 ], "autoUv": false, "windMode": [10,10,10,10] }
+															}
+														}
+													]
+												}
+											]
+										},
+										{
+											"name": "chime3",
+											"from": [ 5.5, 0.0, 5.0 ],
+											"to": [ 5.5, 0.0, 5.0 ],
+											"rotationOrigin": [ 5.5, 0.0, 5.0 ],
+											"rotationY": -26.0,
+											"faces": {
+											},
+											"children": [
+												{
+													"name": "string3",
+													"from": [ -0.1, -1.3, -0.1 ],
+													"to": [ 0.1, 0.5, 0.1 ],
+													"faces": {
+														"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "windMode": [10,10,10,10] }
+													},
+													"children": [
+														{
+															"name": "quartz3",
+															"from": [ -0.65, -9.0, -0.65 ],
+															"to": [ 0.95, 0.0, 0.95 ],
+															"rotationOrigin": [ -0.8, -9.0, -0.8 ],
+															"renderPass": 3,
+															"faces": {
+																"north": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 9.0 ], "windMode": [10,10,10,10] },
+																"east": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 9.0 ], "windMode": [10,10,10,10] },
+																"south": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 9.0 ], "windMode": [10,10,10,10] },
+																"west": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 9.0 ], "windMode": [10,10,10,10] },
+																"up": { "texture": "#material", "uv": [ 8.0, 14.0, 9.9, 15.9 ], "autoUv": false, "windMode": [10,10,10,10] },
+																"down": { "texture": "#material", "uv": [ 8.0, 14.0, 10.0, 16.0 ], "autoUv": false, "windMode": [10,10,10,10] }
+															}
+														},
+														{
+															"name": "quartz8",
+															"from": [ -0.64, -8.7, -0.59 ],
+															"to": [ 0.94, -7.7, 0.61 ],
+															"rotationOrigin": [ -0.8, -8.7, -0.8 ],
+															"rotationX": 45.0,
+															"renderPass": 3,
+															"faces": {
+																"north": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "windMode": [10,10,10,10] },
+																"east": { "texture": "#material", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [10,10,10,10] },
+																"south": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "windMode": [10,10,10,10] },
+																"west": { "texture": "#material", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [10,10,10,10] },
+																"up": { "texture": "#material", "uv": [ 8.0, 14.0, 9.9, 15.9 ], "autoUv": false, "windMode": [10,10,10,10] },
+																"down": { "texture": "#material", "uv": [ 8.0, 14.0, 10.0, 16.0 ], "autoUv": false, "windMode": [10,10,10,10] }
+															}
+														}
+													]
+												}
+											]
+										},
+										{
+											"name": "chime4",
+											"from": [ 1.5, 0.0, 5.0 ],
+											"to": [ 1.5, 0.0, 5.0 ],
+											"rotationOrigin": [ 1.5, 0.0, 5.0 ],
+											"rotationY": 6.0,
+											"faces": {
+											},
+											"children": [
+												{
+													"name": "string4",
+													"from": [ -0.1, -1.1, -0.1 ],
+													"to": [ 0.1, 0.5, 0.1 ],
+													"faces": {
+														"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 1.5 ], "windMode": [10,10,10,10] },
+														"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "windMode": [10,10,10,10] }
+													},
+													"children": [
+														{
+															"name": "quartz4",
+															"from": [ -0.65, -7.0, -0.65 ],
+															"to": [ 0.95, 0.0, 0.95 ],
+															"rotationOrigin": [ -0.8, -7.0, -0.8 ],
+															"renderPass": 3,
+															"faces": {
+																"north": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 7.0 ], "windMode": [10,10,10,10] },
+																"east": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 7.0 ], "windMode": [10,10,10,10] },
+																"south": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 7.0 ], "windMode": [10,10,10,10] },
+																"west": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 7.0 ], "windMode": [10,10,10,10] },
+																"up": { "texture": "#material", "uv": [ 8.0, 14.0, 9.9, 15.9 ], "autoUv": false, "windMode": [10,10,10,10] },
+																"down": { "texture": "#material", "uv": [ 8.0, 14.0, 10.0, 16.0 ], "autoUv": false, "windMode": [10,10,10,10] }
+															}
+														},
+														{
+															"name": "quartz9",
+															"from": [ -0.64, -6.7, -0.59 ],
+															"to": [ 0.94, -5.7, 0.61 ],
+															"rotationOrigin": [ -0.8, -6.7, -0.8 ],
+															"rotationX": 45.0,
+															"renderPass": 3,
+															"faces": {
+																"north": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "windMode": [10,10,10,10] },
+																"east": { "texture": "#material", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [10,10,10,10] },
+																"south": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "windMode": [10,10,10,10] },
+																"west": { "texture": "#material", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [10,10,10,10] },
+																"up": { "texture": "#material", "uv": [ 8.0, 14.0, 9.9, 15.9 ], "autoUv": false, "windMode": [10,10,10,10] },
+																"down": { "texture": "#material", "uv": [ 8.0, 14.0, 10.0, 16.0 ], "autoUv": false, "windMode": [10,10,10,10] }
+															}
+														}
+													]
+												}
+											]
+										},
+										{
+											"name": "chime5",
+											"from": [ 3.5, 0.0, 3.5 ],
+											"to": [ 3.5, 0.0, 3.5 ],
+											"rotationOrigin": [ 3.5, 0.0, 3.5 ],
+											"rotationY": 15.0,
+											"faces": {
+											},
+											"children": [
+												{
+													"name": "string5",
+													"from": [ -0.1, -1.6, -0.1 ],
+													"to": [ 0.1, 0.5, 0.1 ],
+													"faces": {
+														"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "windMode": [9,9,9,9] },
+														"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "windMode": [9,9,9,9] },
+														"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "windMode": [9,9,9,9] },
+														"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "windMode": [9,9,9,9] },
+														"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "windMode": [9,9,9,9] }
+													},
+													"children": [
+														{
+															"name": "quartz5",
+															"from": [ -0.65, -11.0, -0.65 ],
+															"to": [ 0.95, 0.0, 0.95 ],
+															"rotationOrigin": [ -0.8, -11.0, -0.8 ],
+															"renderPass": 3,
+															"faces": {
+																"north": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 11.0 ], "windMode": [9,9,9,9] },
+																"east": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 11.0 ], "windMode": [9,9,9,9] },
+																"south": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 11.0 ], "windMode": [9,9,9,9] },
+																"west": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 11.0 ], "windMode": [9,9,9,9] },
+																"up": { "texture": "#material", "uv": [ 8.0, 14.0, 9.9, 15.9 ], "autoUv": false, "windMode": [9,9,9,9] },
+																"down": { "texture": "#material", "uv": [ 8.0, 14.0, 10.0, 16.0 ], "autoUv": false, "windMode": [9,9,9,9] }
+															}
+														},
+														{
+															"name": "quartz10",
+															"from": [ -0.64, -10.7, -0.59 ],
+															"to": [ 0.94, -9.7, 0.61 ],
+															"rotationOrigin": [ -0.8, -10.7, -0.8 ],
+															"rotationX": 45.0,
+															"renderPass": 3,
+															"faces": {
+																"north": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "windMode": [9,9,9,9] },
+																"east": { "texture": "#material", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [9,9,9,9] },
+																"south": { "texture": "#material", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "windMode": [9,9,9,9] },
+																"west": { "texture": "#material", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [9,9,9,9] },
+																"up": { "texture": "#material", "uv": [ 8.0, 14.0, 9.9, 15.9 ], "autoUv": false, "windMode": [9,9,9,9] },
+																"down": { "texture": "#material", "uv": [ 8.0, 14.0, 10.0, 16.0 ], "autoUv": false, "windMode": [9,9,9,9] }
+															}
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]}

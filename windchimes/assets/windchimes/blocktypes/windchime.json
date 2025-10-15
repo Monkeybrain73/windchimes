@@ -1,0 +1,262 @@
+{
+	"code": "windchime",
+	"class": "WindChime",
+	"storageFlagsByType": {
+		"*": 257
+	},
+	"behaviorsByType": {
+		"*": [
+		{ "name": "Unstable", "properties": {
+			"attachedToFaces": [ "up" ],
+			"attachmentAreas": {
+				"up": { "x1": 7, "y1": 15, "z1": 7, "x2": 8, "y2": 15, "z2": 8 }
+			}
+		}},
+		{ "name": "RightClickPickup" }
+		]
+	},
+	"attributesByType": {
+		"*": {
+			"handbook": { "include": true, "groupBy": ["windchime-*"] }
+		}
+	},
+	"variantgroups": [
+		{ "code": "model", "states": [ "bamboo", "wood", "brass", "copper", "crystal" ] },
+		{ "code": "bamboo", "combine": "SelectiveMultiply", "onVariant": "model", "states": [ "brown", "green" ] },
+		{ "code": "crystal", "combine": "SelectiveMultiply", "onVariant": "model", "states": [ "milkyquartz", "rosequartz", "smokyquartz", "amethyst", "olivine" ] }
+	],
+	"drawtype": "json",
+	"shapeByType": {
+		"*-bamboo-*": { "base": "block/{model}",
+			"alternates": [
+				{ "base": "block/bamboo", "rotateY": 22.5 },
+				{ "base": "block/bamboo", "rotateY": 45 },
+				{ "base": "block/bamboo", "rotateY": 67.5 },
+				{ "base": "block/bamboo", "rotateY": 90 },
+				{ "base": "block/bamboo", "rotateY": 112.5 },
+				{ "base": "block/bamboo", "rotateY": 135 },
+				{ "base": "block/bamboo", "rotateY": 157.5 },
+				{ "base": "block/bamboo", "rotateY": 180 },
+				{ "base": "block/bamboo", "rotateY": 202.5 },
+				{ "base": "block/bamboo", "rotateY": 225 },
+				{ "base": "block/bamboo", "rotateY": 247.5 },
+				{ "base": "block/bamboo", "rotateY": 270 }
+			]
+		},
+		"*-wood": { "base": "block/{model}",
+			"alternates": [
+				{ "base": "block/{model}", "rotateY": 22.5 },
+				{ "base": "block/{model}", "rotateY": 45 },
+				{ "base": "block/{model}", "rotateY": 67.5 },
+				{ "base": "block/{model}", "rotateY": 90 },
+				{ "base": "block/{model}", "rotateY": 112.5 },
+				{ "base": "block/{model}", "rotateY": 135 },
+				{ "base": "block/{model}", "rotateY": 157.5 },
+				{ "base": "block/{model}", "rotateY": 180 },
+				{ "base": "block/{model}", "rotateY": 202.5 },
+				{ "base": "block/{model}", "rotateY": 225 },
+				{ "base": "block/{model}", "rotateY": 247.5 },
+				{ "base": "block/{model}", "rotateY": 270 }
+			]
+		},
+		"*-brass": { "base": "block/{model}",
+			"alternates": [
+				{ "base": "block/{model}", "rotateY": 22.5 },
+				{ "base": "block/{model}", "rotateY": 45 },
+				{ "base": "block/{model}", "rotateY": 67.5 },
+				{ "base": "block/{model}", "rotateY": 90 },
+				{ "base": "block/{model}", "rotateY": 112.5 },
+				{ "base": "block/{model}", "rotateY": 135 },
+				{ "base": "block/{model}", "rotateY": 157.5 },
+				{ "base": "block/{model}", "rotateY": 180 },
+				{ "base": "block/{model}", "rotateY": 202.5 },
+				{ "base": "block/{model}", "rotateY": 225 },
+				{ "base": "block/{model}", "rotateY": 247.5 },
+				{ "base": "block/{model}", "rotateY": 270 }
+			]
+		},
+		"*-copper": { "base": "block/{model}",
+			"alternates": [
+				{ "base": "block/{model}", "rotateY": 22.5 },
+				{ "base": "block/{model}", "rotateY": 45 },
+				{ "base": "block/{model}", "rotateY": 67.5 },
+				{ "base": "block/{model}", "rotateY": 90 },
+				{ "base": "block/{model}", "rotateY": 112.5 },
+				{ "base": "block/{model}", "rotateY": 135 },
+				{ "base": "block/{model}", "rotateY": 157.5 },
+				{ "base": "block/{model}", "rotateY": 180 },
+				{ "base": "block/{model}", "rotateY": 202.5 },
+				{ "base": "block/{model}", "rotateY": 225 },
+				{ "base": "block/{model}", "rotateY": 247.5 },
+				{ "base": "block/{model}", "rotateY": 270 }
+			]
+		},
+		"*-crystal-*": { "base": "block/{model}",
+			"alternates": [
+				{ "base": "block/{model}", "rotateY": 22.5 },
+				{ "base": "block/{model}", "rotateY": 45 },
+				{ "base": "block/{model}", "rotateY": 67.5 },
+				{ "base": "block/{model}", "rotateY": 90 },
+				{ "base": "block/{model}", "rotateY": 112.5 },
+				{ "base": "block/{model}", "rotateY": 135 },
+				{ "base": "block/{model}", "rotateY": 157.5 },
+				{ "base": "block/{model}", "rotateY": 180 },
+				{ "base": "block/{model}", "rotateY": 202.5 },
+				{ "base": "block/{model}", "rotateY": 225 },
+				{ "base": "block/{model}", "rotateY": 247.5 },
+				{ "base": "block/{model}", "rotateY": 270 }
+			]
+		}
+	},
+	"texturesByType": {
+		"*-crystal-milkyquartz": {
+			"material": { "base": "game:block/stone/mineral/milkyquartz" },
+			"wood":  { "base": "game:block/metal/lantern/blackbronze" },
+			"rope": { "base": "game:item/resource/rope" }
+		},
+		"*-crystal-rosequartz": {
+			"material": { "base": "game:block/stone/mineral/rosequartz" },
+			"wood":  { "base": "game:block/metal/lantern/blackbronze" },
+			"rope": { "base": "game:item/resource/rope" }
+		},
+		"*-crystal-smokyquartz": {
+			"material": { "base": "game:block/stone/mineral/smokyquartz" },
+			"wood":  { "base": "game:block/metal/lantern/blackbronze" },
+			"rope": { "base": "game:item/resource/rope" }
+		},
+		"*-crystal-amethyst": {
+			"material": { "base": "game:block/stone/mineral/amethyst" },
+			"wood":  { "base": "game:block/metal/lantern/blackbronze" },
+			"rope": { "base": "game:item/resource/rope" }
+		},
+		"*-crystal-olivine": {
+			"material": { "base": "game:block/stone/mineral/olivine" },
+			"wood":  { "base": "game:block/metal/lantern/blackbronze" },
+			"rope": { "base": "game:item/resource/rope" }
+		},
+		"*-brass": {
+			"material": { "base": "game:block/metal/torchholder/brass" },
+			"wood":  { "base": "game:block/metal/lantern/blackbronze" },
+			"rope": { "base": "game:item/resource/rope" }
+		},
+		"*-copper": {
+			"material": { "base": "game:block/metal/torchholder/ruined" },
+			"wood":  { "base": "game:block/metal/lantern/blackbronze" },
+			"rope": { "base": "game:item/resource/rope" }
+		},
+		"*-wood": {
+			"material": { "base": "game:block/wood/bed/fancy/panel-aged" },
+			"plate":  { "base": "game:block/wood/cage/floor" },
+			"rope": { "base": "game:item/resource/rope" }
+		},
+		"*-bamboo-green": {
+			"material": { "base": "game:block/plant/bamboo/stem-green" },
+			"wood":  { "base": "game:block/wood/charred" },
+			"rope": { "base": "game:item/resource/rope" }
+		},
+		"*-bamboo-brown": {
+			"material": { "base": "game:block/plant/bamboo/stem-brown" },
+			"wood": { "base": "game:block/wood/charred" },
+			"rope": { "base": "game:item/resource/rope" }
+		}
+	},
+	"creativeinventory": { "general": ["*"], "decorative": ["*"] },
+	"heldRightTpIdleAnimation": "holdinglanternrighthand",
+	"heldLeftTpIdleAnimation": "holdinglanternlefthand",
+	"blockmaterial": "Wood",
+	"lightAbsorption": 0,
+	"sidesolid": { "all": false	},
+	"sideopaque": { "all": false },
+	"resistance": 1,
+	"vertexFlagsByType": {
+		"*-crystal-*": {
+			"zOffset": 2,
+			"reflective": true
+		}
+	},
+	"soundsByType": {
+		"*-crystal-*": {
+			"place": "game:block/planks",
+			"hit": "windchimes:windchimes/crystal/hit/hit*",
+			"ambient": "windchimes:windchimes/crystal/ambient/ambient*",
+			"ambientBlockCount": 6,
+			"ambientMaxDistanceMerge": 5
+		},
+		"*-brass": {
+			"place": "game:block/planks",
+			"hit": "windchimes:windchimes/brass/hit/hit*",
+			"ambient": "windchimes:windchimes/brass/ambient/ambient*",
+			"ambientBlockCount": 8,
+			"ambientMaxDistanceMerge": 2
+		},
+		"*-copper": {
+			"place": "game:block/planks",
+			"hit": "windchimes:windchimes/brass/hit/hit*",
+			"ambient": "windchimes:windchimes/brass/ambient/ambient*",
+			"ambientBlockCount": 8,
+			"ambientMaxDistanceMerge": 2
+		},
+		"*-wood": {
+			"place": "game:block/planks",
+			"hit": "windchimes:windchimes/wood/hit/hit*",
+			"ambient": "windchimes:windchimes/wood/ambient/ambient*",
+			"ambientBlockCount": 8,
+			"ambientMaxDistanceMerge": 2
+		},
+		"*-bamboo-*": {
+			"place": "game:block/cloth",
+			"hit": "windchimes:windchimes/bamboo/hit/hit*",
+			"ambient": "windchimes:windchimes/bamboo/ambient/ambient*",
+			"ambientBlockCount": 8,
+			"ambientMaxDistanceMerge": 2
+		}
+	},
+	"heldSoundsByType": {
+		"*-crystal-*": {
+			"idle": "windchimes:windchimes/crystal/ambient/ambient1"
+		},
+		"*-brass": {
+			"idle": "windchimes:windchimes/brass/ambient/ambient1"
+		},
+		"*-copper": {
+			"idle": "windchimes:windchimes/brass/ambient/ambient1"
+		},
+		"*-wood": {
+			"idle": "windchimes:windchimes/wood/ambient/ambient1"
+		},
+		"*-bamboo-*": {
+			"idle": "windchimes:windchimes/bamboo/ambient/ambient1"
+		}
+		
+	},
+	"fpHandTransform": {
+		"translation": { "x": 0.3, "y": -0.1, "z": 0 },
+		"rotation": { "x": 0, "y": -45, "z": 0 },
+		"scale": 1.18
+	},
+	"guiTransformByType": {
+		"*": { "origin": {"x": 0.5, "y": 0.3, "z": 0.5}, "scale": 1.2 }
+	},
+	"tpHandTransform": {
+		"translation": { "x": -0.6899, "y": -1.04, "z": -0.93 },
+		"rotation": { "x": 0, "y": 7, "z": -90 },
+		"origin": { "x": 0.73, "y": 0.49, "z": 0.48 },
+		"scale": 0.55
+	},
+	"tpOffHandTransform": {
+		"translation": { "x": -0.6899, "y": -1.03, "z": -0.93 },
+		"rotation": { "x": 0, "y": -8, "z": -96 },
+		"origin": { "x": 0.73, "y": 0.49, "z": 0.54 },
+		"scale": 0.55
+	},
+	"groundTransform": {
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 2
+	},
+	"selectionboxByType": {
+		"*": { "x1": 0.231, "y1": 0.0441, "z1": 0.231, "x2": 0.7651, "y2": 1, "z2": 0.7651 }
+	},
+	"collisionboxbytype": {
+		"*": { "x1": 0.231, "y1": 0.0441, "z1": 0.231, "x2": 0.7651, "y2": 1, "z2": 0.7651 }
+	}
+}
