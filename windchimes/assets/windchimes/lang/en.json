@@ -1,4 +1,14 @@
 {
+	"windchimes:Open Wind Chime configuration menu": "Open Wind Chime configuration menu",
+	"windchimes:Open Wind Chime Config": "Open Wind Chime Config",
+	"windchimes:Wind Chimes Settings": "Wind Chimes Settings",
+	"windchimes:Wind Chime config hotkey pressed": "Wind Chime config hotkey pressed",
+	"windchimes:Checking for ConfigLib mod...": "Checking for ConfigLib mod...",
+	"windchimes:Found!": "Found!",
+	"windchimes:Not found!": "Not found!",
+	"windchimes:ConfigLib mod found! Wind Chime default configuration GUI will be disabled.": "ConfigLib mod found! Wind Chime default configuration GUI will be disabled.",
+	"windchimes:ConfigLib mod not found! Wind Chime default configuration GUI will be used.": "ConfigLib mod not found! Wind Chime default configuration GUI will be used.",
+
 	"windchimes:block-windchime-bamboo-brown": "Golden bamboo wind chime",
 	"windchimes:block-windchime-bamboo-green": "Green bamboo wind chime",
 	"windchimes:block-windchime-wood": "Wooden wind chime",
@@ -21,61 +31,58 @@
 	"windchimes:block-windchime-bamboo-black": "Black bamboo wind chime",
 	"windchimes:block-windchime-bamboo-moso": "Moso bamboo wind chime",
 
-	"windchimes:windchime_main_volume": "Master volume",
-	"windchimes:windchime-main-volume": "Master volume",
+	"windchimes:windchime-main-volume": "Master Volume",
 	"windchimes:setting-main-volume": "Master volume",
 	"windchimes:setting-comment-main-volume": "Adjust the overall volume of wind chimes.",
 
-	"windchimes:windchime_bamboo_volume": "Bamboo volume",
-	"windchimes:windchime-bamboo-volume": "Bamboo volume",
+	"windchimes:windchime-bamboo-volume": "Bamboo Volume",
 	"windchimes:setting-bamboo-volume": "Bamboo volume",
 	"windchimes:setting-comment-bamboo-volume": "Adjust the volume of bamboo wind chimes.",
 
-	"windchimes:windchime_wood_volume": "Wood volume",
 	"windchimes:windchime-wood-volume": "Wood volume",
 	"windchimes:setting-wood-volume": "Wood volume",
 	"windchimes:setting-comment-wood-volume": "Adjust the volume of wooden wind chimes.",
 
-	"windchimes:windchime_brass_volume": "Brass volume",
-	"windchimes:windchime-brass-volume": "Brass volume",
+	"windchimes:windchime-brass-volume": "Brass Volume",
 	"windchimes:setting-brass-volume": "Brass volume",
 	"windchimes:setting-comment-brass-volume": "Adjust the volume of brass wind chimes.",
 
-	"windchimes:windchime_copper_volume": "Copper volume",
-	"windchimes:windchime-copper-volume": "Copper volume",
+	"windchimes:windchime-copper-volume": "Copper Volume",
 	"windchimes:setting-copper-volume": "Copper volume",
 	"windchimes:setting-comment-copper-volume": "Adjust the volume of copper wind chimes.",
 
-	"windchimes:windchime_crystal_volume": "Crystal volume",
-	"windchimes:windchime-crystal-volume": "Crystal volume",
+	"windchimes:windchime-crystal-volume": "Crystal Volume",
 	"windchimes:setting-crystal-volume": "Crystal volume",
 	"windchimes:setting-comment-crystal-volume": "Adjust the volume of crystal wind chimes.",
 
-	"windchimes:windchime_min_volume": "Min volume",
-	"windchimes:windchime-min-volume": "Min volume",
+	"windchimes:windchime-min-volume": "Min Volume",
 	"windchimes:setting-min-volume": "Min volume",
 	"windchimes:setting-comment-min-volume": "Adjust the minimum volume of wind chimes.",
 
-	"windchimes:windchime_indoor_volume": "Indoor volume",
-	"windchimes:windchime-indoor-volume": "Indoor volume",
+	"windchimes:windchime-indoor-volume": "Indoor Volume",
 	"windchimes:setting-indoor-volume": "Indoor volume",
 	"windchimes:setting-comment-indoor-volume": "Adjust the volume of wind chimes when player is indoors.",
 
-	"windchimes:windchime_max_distance": "Max distance",
-	"windchimes:windchime-max-distance": "Max distance",
+	"windchimes:windchime-max-distance": "Max Distance",
 	"windchimes:setting-max-distance": "Max distance",
 	"windchimes:setting-comment-max-distance": "Adjust the maximum distance at which wind chimes can be heard.",
 
-	"windchimes:windchime_falloff_exponent": "Falloff exponent",
-	"windchimes:windchime-falloff-exponent": "Falloff exponent",
+	"windchimes:windchime-falloff-exponent": "Falloff Exponent",
 	"windchimes:setting-falloff-exponent": "Falloff exponent",
 	"windchimes:setting-comment-falloff-exponent": "Adjust the rate at which wind chime volume decreases with distance.",
-
-	"windchimes:setting-category-server-debug": "Server settings",
 
 	"windchimes:windchime_extended_debug_info": "Extended debug info",
 	"windchimes:windchime-extended-debug-info": "Extended debug info",
 	"windchimes:setting-extended-debug-info": "Extended debug info",
-	"windchimes:setting-comment-extended-debug-info": "Enable extended debug information for wind chimes (requires server restart)."
+	"windchimes:setting-comment-extended-debug-info": "Enable extended debug information for wind chimes (requires server restart).",
+
+	"windchimes:setting-category-server-debug": "Server settings",
+	"windchimes:Debug Logging (server)": "Debug Logging (server)",
+
+	"windchimes:Save": "Save",
+	"windchimes:Close": "Close",
+
+	"windchimes:WindChime settings saved!": "WindChime settings saved!"
+
 
 }

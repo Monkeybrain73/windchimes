@@ -46,7 +46,7 @@
             SingleComposer = capi.Gui
                 .CreateCompo("windchimeconfig", dialogBounds)
                 .AddShadedDialogBG(bgBounds)
-                .AddDialogTitleBar("Wind Chimes Settings", OnClose);
+                .AddDialogTitleBar(Lang.Get("Wind Chimes Settings"), OnClose);
 
             double y = 40;
             double spacing = 32;
@@ -54,16 +54,16 @@
             SingleComposer.BeginChildElements();
 
             // Volume and distance sliders
-            AddSlider(SingleComposer, "Main Volume", nameof(clientConfig.WindChimeMainVolumeMultiplier), clientConfig.WindChimeMainVolumeMultiplier, 0f, 4f, 0.01f, ref y);
-            AddSlider(SingleComposer, "Bamboo Volume", nameof(clientConfig.BambooChimeVolume), clientConfig.BambooChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, "Wood Volume", nameof(clientConfig.WoodChimeVolume), clientConfig.WoodChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, "Brass Volume", nameof(clientConfig.BrassChimeVolume), clientConfig.BrassChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, "Copper Volume", nameof(clientConfig.CopperChimeVolume), clientConfig.CopperChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, "Crystal Volume", nameof(clientConfig.CrystalChimeVolume), clientConfig.CrystalChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, "Min Volume", nameof(clientConfig.WindChimeMinVolume), clientConfig.WindChimeMinVolume, 0f, 0.5f, 0.01f, ref y);
-            AddSlider(SingleComposer, "Indoor Volume", nameof(clientConfig.WindChimeIndoorVolume), clientConfig.WindChimeIndoorVolume, 0f, 1f, 0.01f, ref y);
-            AddSlider(SingleComposer, "Max Distance", nameof(clientConfig.WindChimeMaxDistance), clientConfig.WindChimeMaxDistance, 4f, 64f, 0.5f, ref y);
-            AddSlider(SingleComposer, "Falloff Exponent", nameof(clientConfig.WindChimeFalloffExponent), clientConfig.WindChimeFalloffExponent, 0.5f, 5f, 0.1f, ref y);
+            AddSlider(SingleComposer, Lang.Get("windchime-main-volume"), nameof(clientConfig.WindChimeMainVolumeMultiplier), clientConfig.WindChimeMainVolumeMultiplier, 0f, 4f, 0.01f, ref y);
+            AddSlider(SingleComposer, Lang.Get("windchime-bamboo-volume"), nameof(clientConfig.BambooChimeVolume), clientConfig.BambooChimeVolume, 0f, 2f, 0.01f, ref y);
+            AddSlider(SingleComposer, Lang.Get("windchime-wood-volume"), nameof(clientConfig.WoodChimeVolume), clientConfig.WoodChimeVolume, 0f, 2f, 0.01f, ref y);
+            AddSlider(SingleComposer, Lang.Get("windchime-brass-volume"), nameof(clientConfig.BrassChimeVolume), clientConfig.BrassChimeVolume, 0f, 2f, 0.01f, ref y);
+            AddSlider(SingleComposer, Lang.Get("windchime-copper-volume"), nameof(clientConfig.CopperChimeVolume), clientConfig.CopperChimeVolume, 0f, 2f, 0.01f, ref y);
+            AddSlider(SingleComposer, Lang.Get("windchime-crystal-volume"), nameof(clientConfig.CrystalChimeVolume), clientConfig.CrystalChimeVolume, 0f, 2f, 0.01f, ref y);
+            AddSlider(SingleComposer, Lang.Get("windchime-min-volume"), nameof(clientConfig.WindChimeMinVolume), clientConfig.WindChimeMinVolume, 0f, 0.5f, 0.01f, ref y);
+            AddSlider(SingleComposer, Lang.Get("windchime-indoor-volume"), nameof(clientConfig.WindChimeIndoorVolume), clientConfig.WindChimeIndoorVolume, 0f, 1f, 0.01f, ref y);
+            AddSlider(SingleComposer, Lang.Get("windchime-max-distance"), nameof(clientConfig.WindChimeMaxDistance), clientConfig.WindChimeMaxDistance, 4f, 64f, 0.5f, ref y);
+            AddSlider(SingleComposer, Lang.Get("windchime-falloff-exponent"), nameof(clientConfig.WindChimeFalloffExponent), clientConfig.WindChimeFalloffExponent, 0.5f, 5f, 0.1f, ref y);
 
             y += spacing * 0.5;
 
@@ -71,14 +71,14 @@
             ElementBounds toggleLabelBounds = ElementBounds.Fixed(20, y, 180, 25);
             ElementBounds toggleSwitchBounds = ElementBounds.Fixed(210, y - 4, 50, 30);
 
-            SingleComposer.AddStaticText("Debug Logging (server)", CairoFont.WhiteSmallText(), toggleLabelBounds);
+            SingleComposer.AddStaticText(Lang.Get("Debug Logging (server)"), CairoFont.WhiteSmallText(), toggleLabelBounds);
             SingleComposer.AddSwitch(OnDebugToggle, toggleSwitchBounds, "debugtoggle");
             SingleComposer.GetSwitch("debugtoggle").SetValue(serverConfig.EnableDebugLogging);
             y += spacing * 1.5;
 
             // Save/Cancel buttons
-            SingleComposer.AddSmallButton("Save", OnSaveClicked, ElementBounds.Fixed(20, y, 120, 30))
-                    .AddSmallButton("Cancel", OnCancelClicked, ElementBounds.Fixed(170, y, 120, 30));
+            SingleComposer.AddSmallButton(Lang.Get("Save"), OnSaveClicked, ElementBounds.Fixed(20, y, 120, 30))
+                    .AddSmallButton(Lang.Get("Close"), OnCancelClicked, ElementBounds.Fixed(170, y, 120, 30));
 
             SingleComposer.EndChildElements();
 
@@ -140,7 +140,7 @@
         {
             capi.StoreModConfig(clientConfig, Const.ConfigNameClient);
             capi.StoreModConfig(serverConfig, Const.ConfigNameServer);
-            capi.ShowChatMessage("WindChime settings saved.");
+            capi.ShowChatMessage(Lang.Get("WindChime settings saved!"));
             TryClose();
             return true;
         }
