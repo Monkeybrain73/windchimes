@@ -1,9 +1,4 @@
-﻿using Vintagestory.API.Client;
-using Vintagestory.API.Common;
-using System;
-using System.Collections.Generic;
-
-namespace windchimes
+﻿namespace windchimes
 {
     public class GuiDialogWindChimeConfig : GuiDialog
     {
@@ -143,8 +138,8 @@ namespace windchimes
 
         private bool OnSaveClicked()
         {
-            capi.StoreModConfig(clientConfig, "windchimes-client.json");
-            capi.StoreModConfig(serverConfig, "windchimes-server.json");
+            capi.StoreModConfig(clientConfig, Const.ConfigNameClient);
+            capi.StoreModConfig(serverConfig, Const.ConfigNameServer);
             capi.ShowChatMessage("WindChime settings saved.");
             TryClose();
             return true;

@@ -1,11 +1,12 @@
-﻿[assembly: ModInfo("windchimes",
-                    Authors = new string[] { "xXx_Ape_xXx" },
+﻿
+[assembly: ModInfo(Const.AppId,
+                    Authors = new string[] { Const.AppAuthor },
                     Description = "Add decorative whind chimes",
-                    Version = "1.4.0")]
+                    Version = Const.AppVersion)]
 
 namespace windchimes
 {
-    public class Core : ModSystem
+    public sealed class Core : ModSystem
     {
         public override void Start(ICoreAPI api)
         {
@@ -22,7 +23,7 @@ namespace windchimes
 
             api.RegisterBlockClass("WindChime", typeof(WindChime));
 
-            api.Logger.Event("[WindChimes] mod started");
+            api.Logger.Event($"[{Const.AppName}] mod started");
 
         }
 
@@ -42,7 +43,7 @@ namespace windchimes
             {
                 if (Configs.SConfig.EnableDebugLogging)
                 {
-                    api.World.Logger.Debug("[WindChimes] " + message, args);
+                    api.World.Logger.Debug($"[{Const.AppName}] " + message, args);
                 }
             }
 
@@ -50,13 +51,13 @@ namespace windchimes
             {
                 if (Configs.SConfig.EnableDebugLogging)
                 {
-                    api.World.Logger.VerboseDebug("[WindChimes] " + message, args);
+                    api.World.Logger.VerboseDebug($"[{Const.AppName}] " + message, args);
                 }
             }
 
             public static void Error(ICoreAPI api, string message, params object[] args)
             {
-                api.World.Logger.Error("[WindChimes] " + message, args);
+                api.World.Logger.Error($"[{Const.AppName}] " + message, args);
             }
 
             /// <summary>

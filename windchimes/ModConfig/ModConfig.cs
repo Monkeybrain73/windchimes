@@ -5,9 +5,6 @@
         public static ServerConfig SConfig { get; set; } = new();
         public static ClientConfig CConfig { get; set; } = new();
 
-        private const string ConfigNameServer = "windchimes-server.json";
-        private const string ConfigNameClient = "windchimes-client.json";
-
         #region ServerConfig
         public class ServerConfig
         {
@@ -18,20 +15,20 @@
         {
             try
             {
-                SConfig = api.LoadModConfig<ServerConfig>(ConfigNameServer);
+                SConfig = api.LoadModConfig<ServerConfig>(Const.ConfigNameServer);
                 if (SConfig == null)
                 {
                     SConfig = new ServerConfig();
-                    api.Logger.VerboseDebug("[WindChimes] Config file not found, creating a new one...");
+                    api.Logger.VerboseDebug($"[{Const.AppName}] Config file not found, creating a new one...");
                 }
-                api.StoreModConfig(SConfig, ConfigNameServer);
-                api.Logger.Event("[WindChimes] Server Config loaded");
+                api.StoreModConfig(SConfig, Const.ConfigNameServer);
+                api.Logger.Event($"[{Const.AppName}] Server Config loaded");
 
                 Core.DebugUtil.LogConfig(api, "Loaded server config values", Configs.SConfig);
             }
             catch (Exception ex)
             {
-                api.Logger.Error("[WindChimes] Failed to load config, you probably made a typo:");
+                api.Logger.Error($"[{Const.AppName}] Failed to load config, you probably made a typo:");
                 api.Logger.Error(ex);
                 SConfig = new ServerConfig();
             }
@@ -62,19 +59,19 @@
         {
             try
             {
-                CConfig = api.LoadModConfig<ClientConfig>(ConfigNameClient);
+                CConfig = api.LoadModConfig<ClientConfig>(Const.ConfigNameClient);
                 if (CConfig == null)
                 {
                     CConfig = new ClientConfig();
-                    api.Logger.VerboseDebug("[WindChimes] Config file not found, creating a new one...");
+                    api.Logger.VerboseDebug($"[{Const.AppName}] Config file not found, creating a new one...");
                 }
-                api.StoreModConfig(CConfig, ConfigNameClient);
-                api.Logger.Event("[WindChimes] Client Config loaded");
+                api.StoreModConfig(CConfig, Const.ConfigNameClient);
+                api.Logger.Event($"[{Const.AppName}] Client Config loaded");
                 Core.DebugUtil.LogConfig(api, "Loaded client config values", Configs.CConfig);
             }
             catch (Exception ex)
             {
-                api.Logger.Error("[WindChimes] Failed to load config, you probably made a typo:");
+                api.Logger.Error($"[{Const.AppName}] Failed to load config, you probably made a typo:");
                 api.Logger.Error(ex);
                 CConfig = new ClientConfig();
             }

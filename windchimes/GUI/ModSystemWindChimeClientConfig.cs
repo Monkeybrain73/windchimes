@@ -1,6 +1,4 @@
-﻿using Vintagestory.ServerMods.NoObf;
-
-namespace windchimes
+﻿namespace windchimes
 {
     public class ModSystemWindChimeClient : ModSystem
     {
@@ -14,17 +12,17 @@ namespace windchimes
             capi = api;
 
             bool isLoaded = api.ModLoader.IsModEnabled("configlib");
-            Core.DebugUtil.Verbose(api, "[WindChimes] Checking for ConfigLib mod... {0}", isLoaded);
+            Core.DebugUtil.Verbose(api, $"[{Const.AppName}] Checking for ConfigLib mod... {0}", isLoaded);
             if (isLoaded == true)
             {
                 Configs.TryLoadClientConfig(api);
                 SubscribeToConfigChange(api);
-                Core.DebugUtil.Verbose(api, "[WindChimes] ConfigLib mod found! Wind Chime default configuration GUI will be disabled.");
+                Core.DebugUtil.Verbose(api, $"[{Const.AppName}] ConfigLib mod found! Wind Chime default configuration GUI will be disabled.");
                 return;
             }
             else
             {
-                Core.DebugUtil.Verbose(api, "[WindChimes] ConfigLib mod not found! Wind Chime default configuration GUI will be enabled.");
+                Core.DebugUtil.Verbose(api, $"[{Const.AppName}] ConfigLib mod not found! Wind Chime default configuration GUI will be enabled.");
 
                 Configs.TryLoadClientConfig(api);
                 api.Input.RegisterHotKey("windchimeconfig", "Open Wind Chime Config", GlKeys.O, HotkeyType.GUIOrOtherControls, false, true, false);
@@ -74,8 +72,6 @@ namespace windchimes
                 system.GetConfig("windchimes")?.AssignSettingsValues(Settings);
             };
         }
-
-
 
         public override void Dispose()
         {

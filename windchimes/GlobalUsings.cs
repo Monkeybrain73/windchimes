@@ -4,6 +4,7 @@ global using System.Linq;
 global using System.Text;
 global using System.Threading.Tasks;
 global using ConfigLib;
+global using windchimes;
 global using Vintagestory.API;
 global using Vintagestory.Util;
 global using Vintagestory.API.Client;
