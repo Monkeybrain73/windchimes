@@ -12,25 +12,26 @@
             capi = api;
 
             bool isLoaded = api.ModLoader.IsModEnabled("configlib");
-            Core.DebugUtil.Verbose(api, $"[{Const.AppName}] Checking for ConfigLib mod... {0}", isLoaded);
-            if (isLoaded == true)
+            Core.DebugUtil.Verbose(api, $"[{Const.AppName}] {Lang.Get("Checking for ConfigLib mod...")}{(isLoaded ? Lang.Get("Found!") : Lang.Get("Not found!"))}");
+
+            if (isLoaded)
             {
                 Configs.TryLoadClientConfig(api);
                 SubscribeToConfigChange(api);
-                Core.DebugUtil.Verbose(api, $"[{Const.AppName}] ConfigLib mod found! Wind Chime default configuration GUI will be disabled.");
+                Core.DebugUtil.Verbose(api, $"[{Const.AppName}] {Lang.Get("ConfigLib mod found! Wind Chime default configuration GUI will be disabled.")}");
                 return;
             }
             else
             {
-                Core.DebugUtil.Verbose(api, $"[{Const.AppName}] ConfigLib mod not found! Wind Chime default configuration GUI will be enabled.");
+                Core.DebugUtil.Verbose(api, $"[{Const.AppName}] {Lang.Get("ConfigLib mod not found! Wind Chime default configuration GUI will be used.")}");
 
                 Configs.TryLoadClientConfig(api);
-                api.Input.RegisterHotKey("windchimeconfig", "Open Wind Chime Config", GlKeys.O, HotkeyType.GUIOrOtherControls, false, true, false);
+                api.Input.RegisterHotKey("windchimeconfig", Lang.Get("Open Wind Chime Config"), GlKeys.O, HotkeyType.GUIOrOtherControls, false, true, false);
                 api.Input.SetHotKeyHandler("windchimeconfig", OnHotkeyPressed);
 
                 api.ChatCommands
                     .Create("windchimeconfig")
-                    .WithDescription("Open Wind Chime configuration menu")
+                    .WithDescription(Lang.Get("Open Wind Chime configuration menu"))
                     .HandleWith(_ => { OpenDialog(); return TextCommandResult.Success(); });
 
                 base.StartClientSide(api);
@@ -41,7 +42,7 @@
         private bool OnHotkeyPressed(KeyCombination key)
         {
             OpenDialog();
-            Core.DebugUtil.Verbose(capi, "Wind Chime config hotkey pressed");
+            Core.DebugUtil.Verbose(capi, Lang.Get("Wind Chime config hotkey pressed"));
             return true;
         }
 
