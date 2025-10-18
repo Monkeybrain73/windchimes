@@ -1,4 +1,5 @@
 {
+  "enabled": false,
 	"code": "dreamcatcher",
 	"class": "Block",
 	"storageFlagsByType": {
@@ -6,40 +7,97 @@
 	},
 	"behaviorsByType": {
 		"*": [
-		{ "name": "Unstable", "properties": {
-			"attachedToFaces": [ "up" ],
-			"attachmentAreas": {
-				"up": { "x1": 7, "y1": 15, "z1": 7, "x2": 8, "y2": 15, "z2": 8 }
-			}
-		}},
-		{ "name": "RightClickPickup" }
+			{
+				"name": "Unstable",
+				"properties": {
+					"attachedToFaces": [ "up" ],
+					"attachmentAreas": {
+						"up": {
+							"x1": 7,
+							"y1": 15,
+							"z1": 7,
+							"x2": 8,
+							"y2": 15,
+							"z2": 8
+						}
+					}
+				}
+			},
+			{ "name": "RightClickPickup" }
 		]
 	},
 	"attributesByType": {
 		"*": {
-			"handbook": { "include": true, "groupBy": ["dreamcatcher-{model}-*"] }
+			"handbook": {
+				"include": true,
+				"groupBy": [ "dreamcatcher-{model}-*" ]
+			}
 		}
 	},
 	"variantgroups": [
-		{ "code": "model", "states": [ "square", "triangle" ] },
-		{ "code": "wood", "states": [ "aged" ], "loadFromProperties": "block/wood" }
+		{
+			"code": "model",
+			"states": [ "square", "triangle" ]
+		},
+		{
+			"code": "wood",
+			"states": [ "aged" ],
+			"loadFromProperties": "block/wood"
+		}
 	],
 	"drawtype": "json",
 	"shapeByType": {
-		"*": { "base": "block/dreamcatcher/{model}",
+		"*": {
+			"base": "block/dreamcatcher/{model}",
 			"alternates": [
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 22.5 },
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 45 },
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 67.5 },
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 90 },
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 112.5 },
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 135 },
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 157.5 },
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 180 },
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 202.5 },
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 225 },
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 247.5 },
-				{ "base": "block/dreamcatcher/{model}", "rotateY": 270 }
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 22.5
+				},
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 45
+				},
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 67.5
+				},
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 90
+				},
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 112.5
+				},
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 135
+				},
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 157.5
+				},
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 180
+				},
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 202.5
+				},
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 225
+				},
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 247.5
+				},
+				{
+					"base": "block/dreamcatcher/{model}",
+					"rotateY": 270
+				}
 			]
 		}
 	},
@@ -65,42 +123,102 @@
 			"tuft-tinted": { "base": "game:item/resource/tuft-tinted" }
 		}
 	},
-	"creativeinventory": { "general": ["*"], "decorative": ["*"] },
+	"creativeinventory": {
+		"general": [ "*" ],
+		"decorative": [ "*" ]
+	},
 	"heldRightTpIdleAnimation": "holdinglanternrighthand",
 	"heldLeftTpIdleAnimation": "holdinglanternlefthand",
 	"blockmaterial": "Wood",
 	"lightAbsorption": 0,
-	"sidesolid": { "all": false	},
+	"sidesolid": { "all": false },
 	"sideopaque": { "all": false },
 	"resistance": 1,
 	"fpHandTransform": {
-		"translation": { "x": 0.3, "y": -0.1, "z": 0 },
-		"rotation": { "x": 0, "y": -45, "z": 0 },
+		"translation": {
+			"x": 0.3,
+			"y": -0.1,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": -45,
+			"z": 0
+		},
 		"scale": 1.18
 	},
 	"guiTransformByType": {
-		"*": { "origin": {"x": 0.5, "y": 0.3, "z": 0.5}, "scale": 1.2 }
+		"*": {
+			"origin": {
+				"x": 0.5,
+				"y": 0.3,
+				"z": 0.5
+			},
+			"scale": 1.2
+		}
 	},
 	"tpHandTransform": {
-		"translation": { "x": -0.6899, "y": -1.04, "z": -0.93 },
-		"rotation": { "x": 0, "y": 7, "z": -90 },
-		"origin": { "x": 0.73, "y": 0.49, "z": 0.48 },
+		"translation": {
+			"x": -0.6899,
+			"y": -1.04,
+			"z": -0.93
+		},
+		"rotation": {
+			"x": 0,
+			"y": 7,
+			"z": -90
+		},
+		"origin": {
+			"x": 0.73,
+			"y": 0.49,
+			"z": 0.48
+		},
 		"scale": 0.55
 	},
 	"tpOffHandTransform": {
-		"translation": { "x": -0.6899, "y": -1.03, "z": -0.93 },
-		"rotation": { "x": 0, "y": -8, "z": -96 },
-		"origin": { "x": 0.73, "y": 0.49, "z": 0.54 },
+		"translation": {
+			"x": -0.6899,
+			"y": -1.03,
+			"z": -0.93
+		},
+		"rotation": {
+			"x": 0,
+			"y": -8,
+			"z": -96
+		},
+		"origin": {
+			"x": 0.73,
+			"y": 0.49,
+			"z": 0.54
+		},
 		"scale": 0.55
 	},
 	"groundTransform": {
-		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"origin": {
+			"x": 0.5,
+			"y": 0,
+			"z": 0.5
+		},
 		"scale": 2
 	},
 	"selectionboxByType": {
-		"*": { "x1": 0.231, "y1": 0.0441, "z1": 0.231, "x2": 0.7651, "y2": 1, "z2": 0.7651 }
+		"*": {
+			"x1": 0.231,
+			"y1": 0.0441,
+			"z1": 0.231,
+			"x2": 0.7651,
+			"y2": 1,
+			"z2": 0.7651
+		}
 	},
 	"collisionboxbytype": {
-		"*": { "x1": 0.231, "y1": 0.0441, "z1": 0.231, "x2": 0.7651, "y2": 1, "z2": 0.7651 }
+		"*": {
+			"x1": 0.231,
+			"y1": 0.0441,
+			"z1": 0.231,
+			"x2": 0.7651,
+			"y2": 1,
+			"z2": 0.7651
+		}
 	}
 }
