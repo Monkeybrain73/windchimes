@@ -26,8 +26,8 @@
             {
                 baseStrength *= Configs.CConfig.WindChimeIndoorVolume;
                 baseStrength = Math.Max(baseStrength, Configs.CConfig.WindChimeMinVolume);
-                Core.DebugUtil.Verbose(world.Api,
-                    $"Player is indoors in a large room, reducing wind chime volume to {baseStrength}", Core.LogSide.Client);
+                DebugUtil.Verbose(world.Api,
+                    $"Player is indoors in a large room, reducing wind chime volume to {baseStrength}", DebugUtil.LogSide.Client);
             }
 
             double dist = player.Entity.Pos.AsBlockPos.DistanceTo(pos);
@@ -41,8 +41,8 @@
 
                 baseStrength *= attenuation;
 
-                Core.DebugUtil.Verbose(world.Api,
-                    $"WindChime: type={chimeType} , dist={dist:0.0}, attn={attenuation:0.00}, vol={baseStrength:0.00}", Core.LogSide.Client);
+                DebugUtil.Verbose(world.Api,
+                    $"WindChime: type={chimeType} , dist={dist:0.0}, attn={attenuation:0.00}, vol={baseStrength:0.00}", DebugUtil.LogSide.Client);
             }
 
             return baseStrength;

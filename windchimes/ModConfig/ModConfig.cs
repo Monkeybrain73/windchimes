@@ -24,7 +24,7 @@
                 api.StoreModConfig(SConfig, Const.ConfigNameServer);
                 api.Logger.Event($"[{Const.AppName}] Server Config loaded");
 
-                Core.DebugUtil.LogConfig(api, "Loaded server config values", Configs.SConfig);
+                DebugUtil.LogConfig(api, "Loaded server config values", Configs.SConfig, DebugUtil.LogSide.Server);
             }
             catch (Exception ex)
             {
@@ -53,6 +53,7 @@
             // public float WindChimeObstructionFactor { get; set; } = 0.5f; // Volume decreases by this factor per obstruction (wall, roof) between player and chime
             // public float WindChimeMinWindSpeed { get; set; } = 0.2f; // Minimum wind speed for chimes to make sound
             // public float WindChimeMaxWindSpeed { get; set; } = 1.5f; // Wind speed at which chimes reach max volume
+            public bool EnableDebugLogging { get; set; } = false;
         }
 
         public static void TryLoadClientConfig(ICoreClientAPI api)
@@ -67,7 +68,7 @@
                 }
                 api.StoreModConfig(CConfig, Const.ConfigNameClient);
                 api.Logger.Event($"[{Const.AppName}] Client Config loaded");
-                Core.DebugUtil.LogConfig(api, "Loaded client config values", Configs.CConfig);
+                DebugUtil.LogConfig(api, "Loaded client config values", Configs.CConfig, DebugUtil.LogSide.Client);
             }
             catch (Exception ex)
             {
