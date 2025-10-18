@@ -37,9 +37,6 @@
             ElementBounds insetBounds = ElementBounds.Fixed(0, GuiStyle.TitleBarHeight, insetWidth, insetHeight);
             ElementBounds scrollbarBounds = insetBounds.RightCopy().WithFixedWidth(20);
 
-            ElementBounds clipBounds = insetBounds.ForkContainingChild(GuiStyle.HalfPadding, GuiStyle.HalfPadding, GuiStyle.HalfPadding, GuiStyle.HalfPadding);
-            ElementBounds containerBounds = insetBounds.ForkContainingChild(GuiStyle.HalfPadding, GuiStyle.HalfPadding, GuiStyle.HalfPadding, GuiStyle.HalfPadding);
-            ElementBounds containerRowBounds = ElementBounds.Fixed(2, 0, insetWidth, rowHeight);
 
             ElementBounds bgBounds = ElementBounds.Fill.WithFixedPadding(GuiStyle.ElementToDialogPadding).WithSizing(ElementSizing.FitToChildren).WithChildren(insetBounds, scrollbarBounds);
 
@@ -143,12 +140,14 @@
             capi.StoreModConfig(clientConfig, Const.ConfigNameClient);
             capi.StoreModConfig(serverConfig, Const.ConfigNameServer);
             capi.ShowChatMessage(Lang.Get("WindChime settings saved!"));
+            capi.Gui.PlaySound("game:tick");
             TryClose();
             return true;
         }
 
         private bool OnCancelClicked()
         {
+            capi.Gui.PlaySound("game:tick");
             TryClose();
             return true;
         }
