@@ -37,6 +37,7 @@ namespace windchimes
             base.StartClientSide(api);
         }
 
+        #region DebugUtil
         public static class DebugUtil
         {
             public static void Log(ICoreAPI api, string message, params object[] args)
@@ -93,6 +94,7 @@ namespace windchimes
                 Verbose(api, sb.ToString());
             }
         }
+        #endregion
 
         public override void Dispose()
         {

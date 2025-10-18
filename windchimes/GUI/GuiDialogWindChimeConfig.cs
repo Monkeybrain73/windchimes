@@ -18,10 +18,10 @@
             bool system = capi.ModLoader.IsModEnabled("configlib");
 
             if (system != true)
-            { 
+            {
                 ComposeDialog();
             }
-            
+
         }
 
         private void ComposeDialog()
@@ -54,16 +54,16 @@
             SingleComposer.BeginChildElements();
 
             // Volume and distance sliders
-            AddSlider(SingleComposer, Lang.Get("windchime-main-volume"), nameof(clientConfig.WindChimeMainVolumeMultiplier), clientConfig.WindChimeMainVolumeMultiplier, 0f, 4f, 0.01f, ref y);
-            AddSlider(SingleComposer, Lang.Get("windchime-bamboo-volume"), nameof(clientConfig.BambooChimeVolume), clientConfig.BambooChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, Lang.Get("windchime-wood-volume"), nameof(clientConfig.WoodChimeVolume), clientConfig.WoodChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, Lang.Get("windchime-brass-volume"), nameof(clientConfig.BrassChimeVolume), clientConfig.BrassChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, Lang.Get("windchime-copper-volume"), nameof(clientConfig.CopperChimeVolume), clientConfig.CopperChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, Lang.Get("windchime-crystal-volume"), nameof(clientConfig.CrystalChimeVolume), clientConfig.CrystalChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, Lang.Get("windchime-min-volume"), nameof(clientConfig.WindChimeMinVolume), clientConfig.WindChimeMinVolume, 0f, 0.5f, 0.01f, ref y);
-            AddSlider(SingleComposer, Lang.Get("windchime-indoor-volume"), nameof(clientConfig.WindChimeIndoorVolume), clientConfig.WindChimeIndoorVolume, 0f, 1f, 0.01f, ref y);
-            AddSlider(SingleComposer, Lang.Get("windchime-max-distance"), nameof(clientConfig.WindChimeMaxDistance), clientConfig.WindChimeMaxDistance, 4f, 64f, 0.5f, ref y);
-            AddSlider(SingleComposer, Lang.Get("windchime-falloff-exponent"), nameof(clientConfig.WindChimeFalloffExponent), clientConfig.WindChimeFalloffExponent, 0.5f, 5f, 0.1f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-main-volume", nameof(clientConfig.WindChimeMainVolumeMultiplier), clientConfig.WindChimeMainVolumeMultiplier, 0f, 4f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-bamboo-volume", nameof(clientConfig.BambooChimeVolume), clientConfig.BambooChimeVolume, 0f, 2f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-wood-volume", nameof(clientConfig.WoodChimeVolume), clientConfig.WoodChimeVolume, 0f, 2f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-brass-volume", nameof(clientConfig.BrassChimeVolume), clientConfig.BrassChimeVolume, 0f, 2f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-copper-volume", nameof(clientConfig.CopperChimeVolume), clientConfig.CopperChimeVolume, 0f, 2f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-crystal-volume", nameof(clientConfig.CrystalChimeVolume), clientConfig.CrystalChimeVolume, 0f, 2f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-min-volume", nameof(clientConfig.WindChimeMinVolume), clientConfig.WindChimeMinVolume, 0f, 0.5f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-indoor-volume", nameof(clientConfig.WindChimeIndoorVolume), clientConfig.WindChimeIndoorVolume, 0f, 1f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-max-distance", nameof(clientConfig.WindChimeMaxDistance), clientConfig.WindChimeMaxDistance, 4f, 64f, 0.5f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-falloff-exponent", nameof(clientConfig.WindChimeFalloffExponent), clientConfig.WindChimeFalloffExponent, 0.5f, 5f, 0.1f, ref y);
 
             y += spacing * 0.5;
 
@@ -100,7 +100,9 @@
             int intMax = (int)(max * scale);
             int intValue = (int)(value * scale);
 
-            ElementBounds labelBounds = ElementBounds.Fixed(15, y, 250, 25);
+            label = Lang.Get(label);
+
+            ElementBounds labelBounds = ElementBounds.Fixed(15, y, 250, 26);
             ElementBounds sliderBounds = ElementBounds.Fixed(15, y + 20, 300, 20);
             y += 50;
 
@@ -126,7 +128,7 @@
                 case nameof(Configs.ClientConfig.WindChimeIndoorVolume): clientConfig.WindChimeIndoorVolume = value; break;
                 case nameof(Configs.ClientConfig.WindChimeMaxDistance): clientConfig.WindChimeMaxDistance = value; break;
                 case nameof(Configs.ClientConfig.WindChimeFalloffExponent): clientConfig.WindChimeFalloffExponent = value; break;
-                    default: break;
+                default: break;
             }
             return true;
         }
