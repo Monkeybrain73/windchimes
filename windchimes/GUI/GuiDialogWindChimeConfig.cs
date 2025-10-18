@@ -68,10 +68,20 @@
             ElementBounds toggleLabelBounds = ElementBounds.Fixed(20, y, 180, 25);
             ElementBounds toggleSwitchBounds = ElementBounds.Fixed(210, y - 4, 50, 30);
 
-            SingleComposer.AddStaticText(Lang.Get("Debug Logging (server)"), CairoFont.WhiteSmallText(), toggleLabelBounds);
-            SingleComposer.AddSwitch(OnDebugToggle, toggleSwitchBounds, "debugtoggle");
-            SingleComposer.GetSwitch("debugtoggle").SetValue(serverConfig.EnableDebugLogging);
-            y += spacing * 1.5;
+            if (capi.World.Side == EnumAppSide.Client)
+            {
+                SingleComposer.AddStaticText(Lang.Get("Debug (client)"), CairoFont.WhiteSmallText(), toggleLabelBounds);
+                SingleComposer.AddSwitch(OnClientDebugToggle, toggleSwitchBounds, "clientdebugtoggle");
+                SingleComposer.GetSwitch("clientdebugtoggle").SetValue(clientConfig.EnableDebugLogging);
+                y += spacing * 1.5;
+            }
+            if (capi.World.Side == EnumAppSide.Server)
+            {
+                SingleComposer.AddStaticText(Lang.Get("Debug (server)"), CairoFont.WhiteSmallText(), toggleLabelBounds);
+                SingleComposer.AddSwitch(OnServerDebugToggle, toggleSwitchBounds, "serverdebugtoggle");
+                SingleComposer.GetSwitch("serverdebugtoggle").SetValue(serverConfig.EnableDebugLogging);
+                y += spacing * 1.5;
+            }
 
             // Save/Cancel buttons
             SingleComposer.AddSmallButton(Lang.Get("Save"), OnSaveClicked, ElementBounds.Fixed(20, y, 120, 30))
@@ -130,9 +140,14 @@
             return true;
         }
 
-        private void OnDebugToggle(bool on)
+        private void OnServerDebugToggle(bool on)
         {
             serverConfig.EnableDebugLogging = on;
+        }
+
+        private void OnClientDebugToggle(bool on)
+        {
+            clientConfig.EnableDebugLogging = on;
         }
 
         private bool OnSaveClicked()

@@ -77,7 +77,8 @@
 	"windchimes:setting-comment-extended-debug-info": "Enable extended debug information for wind chimes (requires server restart).",
 
 	"windchimes:setting-category-server-debug": "Server settings",
-	"windchimes:Debug Logging (server)": "Debug Logging (server)",
+	"windchimes:Debug (server)": "Debug (server)",
+	"windchimes:Debug (client)": "Debug (client)",
 
 	"windchimes:Save": "Save",
 	"windchimes:Close": "Close",

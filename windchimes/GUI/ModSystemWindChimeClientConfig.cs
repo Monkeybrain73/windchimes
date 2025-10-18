@@ -12,18 +12,18 @@
             capi = api;
 
             bool isLoaded = api.ModLoader.IsModEnabled("configlib");
-            Core.DebugUtil.Verbose(api, $"[{Const.AppName}] {Lang.Get("Checking for ConfigLib mod...")}{(isLoaded ? Lang.Get("Found!") : Lang.Get("Not found!"))}");
+            Core.DebugUtil.Verbose(api, $"[{Const.AppName}] {Lang.Get("Checking for ConfigLib mod...")}{(isLoaded ? Lang.Get("Found!") : Lang.Get("Not found!"))}", Core.LogSide.Client);
 
             if (isLoaded)
             {
                 Configs.TryLoadClientConfig(api);
                 SubscribeToConfigChange(api);
-                Core.DebugUtil.Verbose(api, $"[{Const.AppName}] {Lang.Get("ConfigLib mod found! Wind Chime default configuration GUI will be disabled.")}");
+                Core.DebugUtil.Verbose(api, $"[{Const.AppName}] {Lang.Get("ConfigLib mod found! Wind Chime default configuration GUI will be disabled.")}", Core.LogSide.Client);
                 return;
             }
             else
             {
-                Core.DebugUtil.Verbose(api, $"[{Const.AppName}] {Lang.Get("ConfigLib mod not found! Wind Chime default configuration GUI will be used.")}");
+                Core.DebugUtil.Verbose(api, $"[{Const.AppName}] {Lang.Get("ConfigLib mod not found! Wind Chime default configuration GUI will be used.")}", Core.LogSide.Client);
 
                 Configs.TryLoadClientConfig(api);
                 api.Input.RegisterHotKey("windchimeconfig", Lang.Get("Open Wind Chime Config"), GlKeys.O, HotkeyType.GUIOrOtherControls, false, true, false);
@@ -42,7 +42,7 @@
         private bool OnHotkeyPressed(KeyCombination key)
         {
             OpenDialog();
-            Core.DebugUtil.Verbose(capi, Lang.Get("Wind Chime config hotkey pressed"));
+            Core.DebugUtil.Verbose(capi, Lang.Get("Wind Chime config hotkey pressed"), Core.LogSide.Client);
             return true;
         }
 
