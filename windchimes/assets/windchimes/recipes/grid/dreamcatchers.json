@@ -1,5 +1,6 @@
 [
 	{
+    "enabled": false,
 		"name": "square",
 		"ingredientPattern": "BA_,BED,AC_",
 		"ingredients": {
@@ -15,6 +16,7 @@
 		"output": { "type": "block", "code": "windchimes:dreamcatcher-square-{wood}" }
 	},
 	{
+    "enabled": false,
 		"name": "triangle",
 		"ingredientPattern": "BA_,DEB,AC_",
 		"ingredients": {
