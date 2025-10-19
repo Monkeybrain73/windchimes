@@ -71,10 +71,15 @@
 	"windchimes:setting-falloff-exponent": "Falloff exponent",
 	"windchimes:setting-comment-falloff-exponent": "Adjust the rate at which wind chime volume decreases with distance.",
 
-	"windchimes:windchime_extended_debug_info": "Extended debug info",
-	"windchimes:windchime-extended-debug-info": "Extended debug info",
-	"windchimes:setting-extended-debug-info": "Extended debug info",
-	"windchimes:setting-comment-extended-debug-info": "Enable extended debug information for wind chimes (requires server restart).",
+	"windchimes:windchime_client_debug_info": "Client debug info",
+	"windchimes:windchime-client-debug-info": "Client debug info",
+	"windchimes:setting-client-debug-info": "Client debug info",
+	"windchimes:setting-comment-client-debug-info": "Enable client debug information for wind chimes (requires server restart).",
+
+	"windchimes:windchime_server_debug_info": "Server debug info",
+	"windchimes:windchime-server-debug-info": "Server debug info",
+	"windchimes:setting-server-debug-info": "Server debug info",
+	"windchimes:setting-comment-server-debug-info": "Enable server debug information for wind chimes (requires server restart).",
 
 	"windchimes:setting-category-server-debug": "Server settings",
 	"windchimes:Debug (server)": "Debug (server)",

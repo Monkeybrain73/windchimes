@@ -147,12 +147,20 @@
       "collapsible": true
     },
     {
-      "code": "windchime_extended_debug_info",
-      "name": "windchime-extended-debug-info",
+      "code": "windchime_client_debug_info",
+      "name": "windchime-client-debug-info",
       "type": "boolean",
-      "ingui": "windchimes:setting-extended-debug-info",
-      "comment": "windchimes:setting-comment-extended-debug-info",
+      "ingui": "windchimes:setting-client-debug-info",
+      "comment": "windchimes:setting-comment-client-debug-info",
       "default": false,
+    },
+    {
+      "code": "windchime_server_debug_info",
+      "name": "windchime-server-debug-info",
+      "type": "boolean",
+      "ingui": "windchimes:setting-server-debug-info",
+      "comment": "windchimes:setting-comment-server-debug-info",
+      "default": false
     }
   ]
 }
