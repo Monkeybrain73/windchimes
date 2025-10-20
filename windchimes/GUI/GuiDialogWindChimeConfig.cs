@@ -56,7 +56,7 @@
             AddSlider(SingleComposer, "windchimes:windchime-brass-volume", nameof(clientConfig.BrassChimeVolume), clientConfig.BrassChimeVolume, 0f, 3f, 0.01f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-copper-volume", nameof(clientConfig.CopperChimeVolume), clientConfig.CopperChimeVolume, 0f, 3f, 0.01f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-crystal-volume", nameof(clientConfig.CrystalChimeVolume), clientConfig.CrystalChimeVolume, 0f, 3f, 0.01f, ref y);
-            AddSlider(SingleComposer, "windchimes:windchime-min-volume", nameof(clientConfig.WindChimeMinVolume), clientConfig.WindChimeMinVolume, 0f, 0.5f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-min-volume", nameof(clientConfig.WindChimeMinVolume), clientConfig.WindChimeMinVolume, 0f, 1f, 0.01f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-indoor-volume", nameof(clientConfig.WindChimeIndoorVolume), clientConfig.WindChimeIndoorVolume, 0f, 1f, 0.01f, ref y);
             AddDistanceSlider(SingleComposer, "windchimes:windchime-max-distance", nameof(clientConfig.WindChimeMaxDistance), clientConfig.WindChimeMaxDistance, 4f, 16f, 0.5f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-falloff-exponent", nameof(clientConfig.WindChimeFalloffExponent), clientConfig.WindChimeFalloffExponent, 0.5f, 5f, 0.1f, ref y);
