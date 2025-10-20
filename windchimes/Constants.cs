@@ -3,7 +3,7 @@
     internal class Const
     {
         public const string AppName = "Windchimes";
-        public const string AppVersion = "1.4.0";
+        public const string AppVersion = "1.4.1";
         public const string AppAuthor = "xXx_Ape_xXx";
         public const string AppRepoUrl = "https://github.com/Monkeybrain73/windchimes";
         public const string AppDonateUrl = "https://ko-fi.com/xxxapexxx";
