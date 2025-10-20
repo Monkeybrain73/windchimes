@@ -13,14 +13,14 @@
 
         public static void Log(ICoreAPI api, string message, LogSide side = LogSide.Both, params object[] args)
         {
-            if (!Configs.SConfig.EnableDebugLogging && !Configs.CConfig.EnableDebugLogging) return;
+            if (!Configs.ServerConfig.Loaded.EnableDebugLogging && !Configs.ClientConfig.Loaded.EnableDebugLogging) return;
 
-            if ((side == LogSide.Server || side == LogSide.Both) && api.Side == EnumAppSide.Server && Configs.SConfig.EnableDebugLogging)
+            if ((side == LogSide.Server || side == LogSide.Both) && api.Side == EnumAppSide.Server && Configs.ServerConfig.Loaded.EnableDebugLogging)
             {
                 api.World.Logger.Debug($"[{Const.AppName}] " + message, args);
             }
 
-            if ((side == LogSide.Client || side == LogSide.Both) && api.Side == EnumAppSide.Client && Configs.CConfig.EnableDebugLogging)
+            if ((side == LogSide.Client || side == LogSide.Both) && api.Side == EnumAppSide.Client && Configs.ClientConfig.Loaded.EnableDebugLogging)
             {
                 api.Logger.Debug($"[{Const.AppName}] " + message, args);
             }
@@ -28,14 +28,14 @@
 
         public static void Verbose(ICoreAPI api, string message, LogSide side = LogSide.Both, params object[] args)
         {
-            if (!Configs.SConfig.EnableDebugLogging && !Configs.CConfig.EnableDebugLogging) return;
+            if (!Configs.ServerConfig.Loaded.EnableDebugLogging && !Configs.ClientConfig.Loaded.EnableDebugLogging) return;
 
-            if ((side == LogSide.Server || side == LogSide.Both) && api.Side == EnumAppSide.Server && Configs.SConfig.EnableDebugLogging)
+            if ((side == LogSide.Server || side == LogSide.Both) && api.Side == EnumAppSide.Server && Configs.ServerConfig.Loaded.EnableDebugLogging)
             {
                 api.World.Logger.VerboseDebug($"[{Const.AppName}] " + message, args);
             }
 
-            if ((side == LogSide.Client || side == LogSide.Both) && api.Side == EnumAppSide.Client && Configs.CConfig.EnableDebugLogging)
+            if ((side == LogSide.Client || side == LogSide.Both) && api.Side == EnumAppSide.Client && Configs.ClientConfig.Loaded.EnableDebugLogging)
             {
                 api.Logger.VerboseDebug($"[{Const.AppName}] " + message, args);
             }
@@ -43,14 +43,14 @@
 
         public static void Error(ICoreAPI api, string message, LogSide side = LogSide.Both, params object[] args)
         {
-            if (!Configs.SConfig.EnableDebugLogging && !Configs.CConfig.EnableDebugLogging) return;
+            if (!Configs.ServerConfig.Loaded.EnableDebugLogging && !Configs.ClientConfig.Loaded.EnableDebugLogging) return;
 
-            if ((side == LogSide.Server || side == LogSide.Both) && api.Side == EnumAppSide.Server && Configs.SConfig.EnableDebugLogging)
+            if ((side == LogSide.Server || side == LogSide.Both) && api.Side == EnumAppSide.Server && Configs.ServerConfig.Loaded.EnableDebugLogging)
             {
                 api.World.Logger.Error($"[{Const.AppName}] " + message, args);
             }
 
-            if ((side == LogSide.Client || side == LogSide.Both) && api.Side == EnumAppSide.Client && Configs.CConfig.EnableDebugLogging)
+            if ((side == LogSide.Client || side == LogSide.Both) && api.Side == EnumAppSide.Client && Configs.ClientConfig.Loaded.EnableDebugLogging)
             {
                 api.Logger.Error($"[{Const.AppName}] " + message, args);
             }

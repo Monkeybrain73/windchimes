@@ -4,7 +4,7 @@
   "settings": {
     "float": {
       "WINDCHIMEMAINVOLUME": {
-        "name": "windchime-main-volume",
+        "name": "WindChimeMainVolumeMultiplier",
         "ingui": "windchimes:setting-main-volume",
         "weight": 5,
         "comment": "windchimes:setting-comment-main-volume",
@@ -16,7 +16,7 @@
         }
       },
       "WINDCHIMEBAMBOOVOLUME": {
-        "name": "windchime-bamboo-volume",
+        "name": "BambooChimeVolume",
         "ingui": "windchimes:setting-bamboo-volume",
         "weight": 15,
         "comment": "windchimes:setting-comment-bamboo-volume",
@@ -28,7 +28,7 @@
         }
       },
       "WINDCHIMEWOODVOLUME": {
-        "name": "windchime-wood-volume",
+        "name": "WoodChimeVolume",
         "ingui": "windchimes:setting-wood-volume",
         "weight": 25,
         "comment": "windchimes:setting-comment-wood-volume",
@@ -40,7 +40,7 @@
         }
       },
       "WINDCHIMEBRASSVOLUME": {
-        "name": "windchime-brass-volume",
+        "name": "BrassChimeVolume",
         "ingui": "windchimes:setting-brass-volume",
         "weight": 35,
         "comment": "windchimes:setting-comment-brass-volume",
@@ -52,7 +52,7 @@
         }
       },
       "WINDCHIMECOPPERVOLUME": {
-        "name": "windchime-copper-volume",
+        "name": "CopperChimeVolume",
         "ingui": "windchimes:setting-copper-volume",
         "weight": 45,
         "comment": "windchimes:setting-comment-copper-volume",
@@ -64,7 +64,7 @@
         }
       },
       "WINDCHIMECRYSTALVOLUME": {
-        "name": "windchime-crystal-volume",
+        "name": "CrystalChimeVolume",
         "ingui": "windchimes:setting-crystal-volume",
         "weight": 55,
         "comment": "windchimes:setting-comment-crystal-volume",
@@ -76,7 +76,7 @@
         }
       },
       "WINDCHIMEMINVOLUME": {
-        "name": "windchime-min-volume",
+        "name": "WindChimeMinVolume",
         "ingui": "windchimes:setting-min-volume",
         "weight": 65,
         "comment": "windchimes:setting-comment-min-volume",
@@ -88,7 +88,7 @@
         }
       },
       "WINDCHIMEINDOORVOLUME": {
-        "name": "windchime-indoor-volume",
+        "name": "WindChimeIndoorVolume",
         "ingui": "windchimes:setting-indoor-volume",
         "weight": 75,
         "comment": "windchimes:setting-comment-indoor-volume",
@@ -100,7 +100,7 @@
         }
       },
       "WINDCHIMEMAXDISTANCE": {
-        "name": "windchime-max-distance",
+        "name": "WindChimeMaxDistance",
         "ingui": "windchimes:setting-max-distance",
         "weight": 85,
         "comment": "windchimes:setting-comment-max-distance",
@@ -112,7 +112,7 @@
         }
       },
       "WINDCHIMEFALLOFFEXPONENT": {
-        "name": "windchime-falloff-exponent",
+        "name": "WindChimeFalloffExponent",
         "ingui": "windchimes:setting-falloff-exponent",
         "weight": 95,
         "comment": "windchimes:setting-comment-falloff-exponent",
@@ -126,7 +126,7 @@
     },
     "boolean": {
       "WINDCHIMECLIENTDEBUG": {
-        "name": "windchime-client-debug-info",
+        "name": "EnableDebugLogging",
         "ingui": "windchimes:setting-client-debug-info",
         "weight": 105,
         "comment": "windchimes:setting-comment-client-debug-info",

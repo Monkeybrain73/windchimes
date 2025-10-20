@@ -26,6 +26,7 @@
                     api.Logger.VerboseDebug($"[{Const.AppName}] Config file not found, creating a new one...");
                 }
                 api.StoreModConfig(SConfig, Const.ConfigNameServer);
+                ServerConfig.Loaded = SConfig;
                 api.Logger.Event($"[{Const.AppName}] Server Config loaded");
 
                 DebugUtil.LogConfig(api, "Loaded server config values", Configs.SConfig, DebugUtil.LogSide.Server);
@@ -63,8 +64,8 @@
 
         public static void TryLoadClientConfig(ICoreClientAPI api)
         {
-            bool isLoaded = api.ModLoader.IsModEnabled("configlib");
-            if (isLoaded) return;
+            // bool isLoaded = api.ModLoader.IsModEnabled("configlib");
+            // if (isLoaded) return;
 
             try
             {
@@ -75,6 +76,7 @@
                     api.Logger.VerboseDebug($"[{Const.AppName}] Config file not found, creating a new one...");
                 }
                 api.StoreModConfig(CConfig, Const.ConfigNameClient);
+                ClientConfig.Loaded = CConfig;
                 api.Logger.Event($"[{Const.AppName}] Client Config loaded");
                 DebugUtil.LogConfig(api, "Loaded client config values", Configs.CConfig, DebugUtil.LogSide.Client);
             }

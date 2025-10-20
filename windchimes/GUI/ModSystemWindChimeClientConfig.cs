@@ -1,4 +1,6 @@
-﻿namespace windchimes
+﻿using Vintagestory.ServerMods.NoObf;
+
+namespace windchimes
 {
     public class ModSystemWindChimeClient : ModSystem
     {
@@ -70,7 +72,7 @@
 
             system.ConfigsLoaded += () =>
             {
-                system.GetConfig("windchimes")?.AssignSettingsValues(Configs.CConfig);
+                system.GetConfig("windchimes")?.AssignSettingsValues(Configs.ClientConfig.Loaded);
             };
         }
 
