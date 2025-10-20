@@ -5,7 +5,8 @@
     "path": "/ingredient/allowedVariants",
     "value": ["brass"],
     "file": "game:recipes/smithing/rod.json",
-    "side": "server"
+    "side": "server",
+    "dependsOn": [{ "modid": "pabrass", "invert": true }]
 },
 {
 	"enabled": true,
@@ -13,6 +14,7 @@
     "path": "/variantgroups/0/states",
     "value": ["brass"],
     "file": "game:itemtypes/part/rod.json",
-    "side": "server"
+    "side": "server",
+    "dependsOn": [{ "modid": "pabrass", "invert": true }]
 }
 ]
