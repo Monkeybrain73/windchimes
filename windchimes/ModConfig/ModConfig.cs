@@ -8,11 +8,15 @@
         #region ServerConfig
         public class ServerConfig
         {
+            public static ServerConfig Loaded { get; set; } = new ServerConfig();
             public bool EnableDebugLogging { get; set; } = false;
         }
 
         public static void TryLoadServerConfig(ICoreServerAPI api)
         {
+            // bool isLoaded = api.ModLoader.IsModEnabled("configlib");
+            // if (isLoaded) return;
+
             try
             {
                 SConfig = api.LoadModConfig<ServerConfig>(Const.ConfigNameServer);
@@ -38,6 +42,7 @@
         #region ClientConfig
         public class ClientConfig
         {
+            public static ClientConfig Loaded { get; set; } = new ClientConfig();
             public float WindChimeMainVolumeMultiplier { get; set; } = 1.0f;
             public float BambooChimeVolume { get; set; } = 0.5f;
             public float WoodChimeVolume { get; set; } = 0.5f;
@@ -58,6 +63,9 @@
 
         public static void TryLoadClientConfig(ICoreClientAPI api)
         {
+            bool isLoaded = api.ModLoader.IsModEnabled("configlib");
+            if (isLoaded) return;
+
             try
             {
                 CConfig = api.LoadModConfig<ClientConfig>(Const.ConfigNameClient);

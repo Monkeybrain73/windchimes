@@ -1,7 +1,4 @@
-﻿using System.Net.Security;
-using Vintagestory.Common;
-
-namespace windchimes
+﻿namespace windchimes
 {
     public class GuiDialogWindChimeConfig : GuiDialog
     {
@@ -31,7 +28,6 @@ namespace windchimes
         {
             int insetWidth = 270;
             int insetHeight = 580;
-            int rowHeight = 32;
 
             ElementBounds dialogBounds = ElementStdBounds.AutosizedMainDialog
                 .WithAlignment(EnumDialogArea.CenterMiddle)
@@ -55,11 +51,11 @@ namespace windchimes
 
             // Volume and distance sliders
             AddSlider(SingleComposer, "windchimes:windchime-main-volume", nameof(clientConfig.WindChimeMainVolumeMultiplier), clientConfig.WindChimeMainVolumeMultiplier, 0f, 4f, 0.01f, ref y);
-            AddSlider(SingleComposer, "windchimes:windchime-bamboo-volume", nameof(clientConfig.BambooChimeVolume), clientConfig.BambooChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, "windchimes:windchime-wood-volume", nameof(clientConfig.WoodChimeVolume), clientConfig.WoodChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, "windchimes:windchime-brass-volume", nameof(clientConfig.BrassChimeVolume), clientConfig.BrassChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, "windchimes:windchime-copper-volume", nameof(clientConfig.CopperChimeVolume), clientConfig.CopperChimeVolume, 0f, 2f, 0.01f, ref y);
-            AddSlider(SingleComposer, "windchimes:windchime-crystal-volume", nameof(clientConfig.CrystalChimeVolume), clientConfig.CrystalChimeVolume, 0f, 2f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-bamboo-volume", nameof(clientConfig.BambooChimeVolume), clientConfig.BambooChimeVolume, 0f, 3f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-wood-volume", nameof(clientConfig.WoodChimeVolume), clientConfig.WoodChimeVolume, 0f, 3f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-brass-volume", nameof(clientConfig.BrassChimeVolume), clientConfig.BrassChimeVolume, 0f, 3f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-copper-volume", nameof(clientConfig.CopperChimeVolume), clientConfig.CopperChimeVolume, 0f, 3f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-crystal-volume", nameof(clientConfig.CrystalChimeVolume), clientConfig.CrystalChimeVolume, 0f, 3f, 0.01f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-min-volume", nameof(clientConfig.WindChimeMinVolume), clientConfig.WindChimeMinVolume, 0f, 0.5f, 0.01f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-indoor-volume", nameof(clientConfig.WindChimeIndoorVolume), clientConfig.WindChimeIndoorVolume, 0f, 1f, 0.01f, ref y);
             AddDistanceSlider(SingleComposer, "windchimes:windchime-max-distance", nameof(clientConfig.WindChimeMaxDistance), clientConfig.WindChimeMaxDistance, 4f, 16f, 0.5f, ref y);

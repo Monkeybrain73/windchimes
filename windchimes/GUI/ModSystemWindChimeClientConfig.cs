@@ -5,7 +5,7 @@
         private ICoreClientAPI capi;
         private GuiDialogWindChimeConfig dialog;
 
-        public Configs.ClientConfig Settings { get; set; } = new();
+        // public Configs.ClientConfig Settings { get; set; } = new();
 
         public override void StartClientSide(ICoreClientAPI api)
         {
@@ -16,8 +16,8 @@
 
             if (isLoaded)
             {
-                Configs.TryLoadClientConfig(api);
                 SubscribeToConfigChange(api);
+                Configs.TryLoadClientConfig(api);
                 DebugUtil.Verbose(api, $"[{Const.AppName}] {Lang.Get("ConfigLib mod found! Wind Chime default configuration GUI will be disabled.")}", DebugUtil.LogSide.Client);
                 return;
             }
@@ -65,12 +65,12 @@
             {
                 if (domain != "windchimes") return;
 
-                setting.AssignSettingValue(Settings);
+                setting.AssignSettingValue(Configs.CConfig);
             };
 
             system.ConfigsLoaded += () =>
             {
-                system.GetConfig("windchimes")?.AssignSettingsValues(Settings);
+                system.GetConfig("windchimes")?.AssignSettingsValues(Configs.CConfig);
             };
         }
 
