@@ -1,0 +1,20 @@
+[
+{
+  "enabled": true,
+    "op": "replace",
+    "file": "windchimes:assets/windchimes/patches/brass.json",
+    "path": "/0/enabled",
+    "value": false,
+    "side": "server",
+    "dependsOn": [{ "modid": "pabrass" }]
+},
+{
+  "enabled": true,
+    "op": "replace",
+    "file": "windchimes:assets/windchimes/patches/brass.json",
+    "path": "/1/enabled",
+    "value": false,
+    "side": "server",
+    "dependsOn": [{ "modid": "pabrass" }]
+}
+]
