@@ -1,13 +1,13 @@
 {
-	"windchimes:Open Wind Chime configuration menu": "Open Wind Chime configuration menu",
-	"windchimes:Open Wind Chime Config": "Open Wind Chime Config",
-	"windchimes:Wind Chimes Settings": "Wind Chimes Settings",
-	"windchimes:Wind Chime config hotkey pressed": "Wind Chime config hotkey pressed",
-	"windchimes:Checking for ConfigLib mod...": "Checking for ConfigLib mod...",
-	"windchimes:Found!": "Found!",
-	"windchimes:Not found!": "Not found!",
-	"windchimes:ConfigLib mod found! Wind Chime default configuration GUI will be disabled.": "ConfigLib mod found! Wind Chime default configuration GUI will be disabled.",
-	"windchimes:ConfigLib mod not found! Wind Chime default configuration GUI will be used.": "ConfigLib mod not found! Wind Chime default configuration GUI will be used.",
+	"game:Open Wind Chime configuration menu": "Open Wind Chime configuration menu",
+	"game:Open Wind Chime Config": "Open Wind Chime Config",
+	"game:Wind Chimes Settings": "Wind Chimes Settings",
+	"game:Wind Chime config hotkey pressed": "Wind Chime config hotkey pressed",
+	"game:Checking for ConfigLib mod...": "Checking for ConfigLib mod...",
+	"game:Found!": "Found!",
+	"game:Not found!": "Not found!",
+	"game:ConfigLib mod found! Wind Chime default configuration GUI will be disabled.": "ConfigLib mod found! Wind Chime default configuration GUI will be disabled.",
+	"game:ConfigLib mod not found! Wind Chime default configuration GUI will be used.": "ConfigLib mod not found! Wind Chime default configuration GUI will be used.",
 
 	"windchimes:block-windchime-bamboo-brown": "Golden bamboo wind chime",
 	"windchimes:block-windchime-bamboo-green": "Green bamboo wind chime",
@@ -85,8 +85,8 @@
 	"windchimes:Debug (server)": "Debug (server)",
 	"windchimes:Debug (client)": "Debug (client)",
 
-	"windchimes:Save": "Save",
-	"windchimes:Close": "Close",
+	"game:Save": "Save",
+	"game:Close": "Close",
 
 	"windchimes:WindChime settings saved!": "WindChime settings saved!"
 
