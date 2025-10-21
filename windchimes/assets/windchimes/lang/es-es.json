@@ -1,11 +1,22 @@
 {
-    "// Wind Chimes v1.3.0 || Enlace de VS ModDB: https://mods.vintagestory.at/windchimes ": "",
-    "// Traducido por C4BR3R4 || Última Modificación: 30/08/2025 || Registro de Cambios: https://c4br3r4.es/index.php?topic=1382.0 ": "",
+    "// Wind Chimes v1.4.1 || Enlace de VS ModDB: https://mods.vintagestory.at/windchimes ": "",
+    "// Traducido por C4BR3R4 || Última Modificación: 20/OCT/2025 || Registro de Cambios: https://c4br3r4.es/index.php?topic=1382.0 ": "",
+
+	"game:Open Wind Chime configuration menu": "Abrir el menú de configuración de «Wind Chime».",
+	"game:Open Wind Chime Config": "Wind Chime ► Abrir el menú de configuración.",
+	"game:Wind Chimes Settings": "Configuración de Wind Chimes",
+	"game:Wind Chime config hotkey pressed": "Se ha pulsado la tecla de acceso rápido de configuración de «Wind Chime».",
+	"game:Checking for ConfigLib mod...": "Comprobando la existencia del mod ConfigLib...",
+	"game:Found!": "¡Encontrado!",
+	"game:Not found!": "¡No encontrado!",
+	"game:ConfigLib mod found! Wind Chime default configuration GUI will be disabled.": "¡Se ha encontrado el mod ConfigLib! La interfaz de configuración predeterminada de Wind Chime se desactivará.",
+	"game:ConfigLib mod not found! Wind Chime default configuration GUI will be used.": "¡No se ha encontrado el mod ConfigLib! Se utilizará la interfaz de configuración predeterminada de Wind Chime.",
 
 	"windchimes:block-windchime-bamboo-brown": "Campanilla de Viento de Bambú Dorado",
 	"windchimes:block-windchime-bamboo-green": "Campanilla de Viento de Bambú Verde",
 	"windchimes:block-windchime-wood": "Campanilla de Viento de Madera",
 	"windchimes:block-windchime-brass": "Campanilla de Viento de Latón",
+	"windchimes:block-windchime-copper": "Campanilla de Viento de Cobre",
 	"windchimes:block-windchime-crystal-milkyquartz": "Campanilla de Viento de Vidrio Cuarzoso Lechoso",
 	"windchimes:block-windchime-crystal-rosequartz": "Campanilla de Viento de Vidrio Cuarzoso Rosa",
 	"windchimes:block-windchime-crystal-smokyquartz": "Campanilla de Viento de Vidrio Cuarzoso Ahumado",
@@ -14,11 +25,71 @@
 	"windchimes:block-windchime-bone": "Campanilla de Viento de Hueso",
 	"windchimes:block-windchime-glass": "Campanilla de Viento de Vidrio",
 
-	"game:item-rod-brass": "Varilla de Latón",
+	"windchimes:block-dreamcatcher-square-*": "Atrapasueños Cuadrado",
+	"windchimes:block-dreamcatcher-triangle-*": "Atrapasueños Triangular",
 
+	"game:item-rod-brass": "Varilla de Latón",
 
 	"windchimes:block-windchime-bamboo-fountain": "Campanilla de Viento de Bambú Fuente",
 	"windchimes:block-windchime-bamboo-black": "Campanilla de Viento de Bambú Negro",
-	"windchimes:block-windchime-bamboo-moso": "Campanilla de Viento de Bambú Musgoso"
+	"windchimes:block-windchime-bamboo-moso": "Campanilla de Viento de Bambú Musgoso",
 
+	"windchimes:windchime-main-volume": "Volumen General (100)",
+	"windchimes:setting-main-volume": "Volumen General",
+	"windchimes:setting-comment-main-volume": "Ajuste del volumen general de las Campanilla de Viento.\n\nPredeterminado: 1.00",
+
+	"windchimes:windchime-bamboo-volume": "Volumen del Bambú (50)",
+	"windchimes:setting-bamboo-volume": "Volumen del Bambú",
+	"windchimes:setting-comment-bamboo-volume": "Ajuste del volumen de las Campanillas de Viento de Bambú.\n\nPredeterminado: 0.50",
+
+	"windchimes:windchime-wood-volume": "Volumen de la Madera (50)",
+	"windchimes:setting-wood-volume": "Volumen de la Madera",
+	"windchimes:setting-comment-wood-volume": "Ajuste del volumen de las Campanillas de Viento de Madera.\n\nPredeterminado: 0.50",
+
+	"windchimes:windchime-brass-volume": "Volumen del Latón (50)",
+	"windchimes:setting-brass-volume": "Volumen del Latón",
+	"windchimes:setting-comment-brass-volume": "Ajuste del volumen de las Campanillas de Viento de Latón.\n\nPredeterminado: 0.50",
+
+	"windchimes:windchime-copper-volume": "Volumen del Cobre (50)",
+	"windchimes:setting-copper-volume": "Volumen del Cobre",
+	"windchimes:setting-comment-copper-volume": "Ajuste del volumen de las Campanillas de Viento de Cobre.\n\nPredeterminado: 0.50",
+
+	"windchimes:windchime-crystal-volume": "Volumen del Vidrio (50)",
+	"windchimes:setting-crystal-volume": "Volumen del Vidrio",
+	"windchimes:setting-comment-crystal-volume": "Ajuste del volumen de las Campanillas de Viento de Vidrio.\n\nPredeterminado: 0.50",
+
+	"windchimes:windchime-min-volume": "Volumen Mínimo (4)",
+	"windchimes:setting-min-volume": "Volumen Mínimo",
+	"windchimes:setting-comment-min-volume": "Ajuste del volumen mínimo de las Campanillas de Viento.\n\nPredeterminado: 0.04",
+
+	"windchimes:windchime-indoor-volume": "Volumen en Interiores (9)",
+	"windchimes:setting-indoor-volume": "Volumen en Interiores",
+	"windchimes:setting-comment-indoor-volume": "Ajuste del volumen de las Campanillas de Viento cuando el Jugador se encuentra en interiores.\n\nPredeterminado: 0.09",
+
+	"windchimes:windchime-max-distance": "Distancia Máxima (16)",
+	"windchimes:setting-max-distance": "Distancia Máxima",
+	"windchimes:setting-comment-max-distance": "Ajuste de la distancia máxima a la que se pueden oír las Campanillas de Viento.\n\nPredeterminado: 0.16",
+
+	"windchimes:windchime-falloff-exponent": "Pérdida de Potencia (25)",
+	"windchimes:setting-falloff-exponent": "Pérdida de Potencia",
+	"windchimes:setting-comment-falloff-exponent": "Ajuste de velocidad con la que disminuye el volumen de las Campanillas de Viento con la distancia.\n\nPredeterminado: 0.25",
+
+	"windchimes:windchime_client_debug_info": "Información de Depuración del Cliente",
+	"windchimes:windchime-client-debug-info": "Información de Depuración del Cliente",
+	"windchimes:setting-client-debug-info": "Información de Depuración del Cliente",
+	"windchimes:setting-comment-client-debug-info": "Activar la información de depuración de «Wind Chime» del lado del cliente.\n(Requiere reiniciar el servidor).",
+
+	"windchimes:windchime_server_debug_info": "Información de Depuración del Servidor",
+	"windchimes:windchime-server-debug-info": "Información de Depuración del Servidor",
+	"windchimes:setting-server-debug-info": "Información de Depuración del Servidor",
+	"windchimes:setting-comment-server-debug-info": "Activar la información de depuración de «Wind Chime» del lado del servidor.\n(Requiere reiniciar el servidor).",
+
+	"windchimes:setting-category-server-debug": "Configuración del Servidor",
+	"game:Debug (server)": "Dep. Servidor",
+	"game:Debug (client)": "Dep. Cliente",
+
+	"windchimes:Save": "Guardar",
+	"windchimes:Close": "Cerrar",
+
+	"game:WindChime settings saved!": "¡Configuración de Wind Chime guardada!"
 }
