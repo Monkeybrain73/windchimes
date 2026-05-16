@@ -60,6 +60,7 @@
             // public float WindChimeMinWindSpeed { get; set; } = 0.2f; // Minimum wind speed for chimes to make sound
             // public float WindChimeMaxWindSpeed { get; set; } = 1.5f; // Wind speed at which chimes reach max volume
             public bool EnableDebugLogging { get; set; } = false;
+            public bool DisableIndoorMuffle { get; set; } = false;
         }
 
         public static void TryLoadClientConfig(ICoreClientAPI api)

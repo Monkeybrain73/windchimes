@@ -1,0 +1,138 @@
+[
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/soundMap",
+    "value": [
+      {
+        "group": "windchimes:sounds/windchimes/bamboo*",
+        "defaultKey": "windchimes:windchime-bamboo-default",
+        "value": [
+
+          {
+            "match": "windchimes:sounds/windchimes/bamboo/ambient/ambient*",
+            "tags": "ambience,environment",
+            "captionKey": "windchimes:windchime-bamboo-ambient"
+          },
+          {
+            "match": "windchimes:sounds/windchimes/bamboo/hit/hit*",
+            "tags": "ambience,environment",
+            "captionKey": "windchimes:windchime-bamboo-hit"
+          }
+
+        ]
+      }
+    ],
+    "file": "closedcaptions:config/matchconfig.json",
+    "side": "client"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/soundMap",
+    "value": [
+      {
+        "group": "windchimes:sounds/windchimes/wood*",
+        "defaultKey": "windchimes:windchime-wood-default",
+        "value": [
+
+          {
+            "match": "windchimes:sounds/windchimes/wood/ambient/ambient*",
+            "tags": "ambience,environment",
+            "captionKey": "windchimes:windchime-wood-ambient"
+          },
+          {
+            "match": "windchimes:sounds/windchimes/wood/hit/hit*",
+            "tags": "ambience,environment",
+            "captionKey": "windchimes:windchime-wood-hit"
+          }
+
+        ]
+      }
+    ],
+    "file": "closedcaptions:config/matchconfig.json",
+    "side": "client"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/soundMap",
+    "value": [
+      {
+        "group": "windchimes:sounds/windchimes/brass*",
+        "defaultKey": "windchimes:windchime-brass-default",
+        "value": [
+
+          {
+            "match": "windchimes:sounds/windchimes/brass/ambient/ambient*",
+            "tags": "ambience,environment",
+            "captionKey": "windchimes:windchime-brass-ambient"
+          },
+          {
+            "match": "windchimes:sounds/windchimes/brass/hit/hit*",
+            "tags": "ambience,environment",
+            "captionKey": "windchimes:windchime-brass-hit"
+          }
+
+        ]
+      }
+    ],
+    "file": "closedcaptions:config/matchconfig.json",
+    "side": "client"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/soundMap",
+    "value": [
+      {
+        "group": "windchimes:sounds/windchimes/copper*",
+        "defaultKey": "windchimes:windchime-copper-default",
+        "value": [
+
+          {
+            "match": "windchimes:sounds/windchimes/copper/ambient/ambient*",
+            "tags": "ambience,environment",
+            "captionKey": "windchimes:windchime-copper-ambient"
+          },
+          {
+            "match": "windchimes:sounds/windchimes/copper/hit/hit*",
+            "tags": "ambience,environment",
+            "captionKey": "windchimes:windchime-copper-hit"
+          }
+
+        ]
+      }
+    ],
+    "file": "closedcaptions:config/matchconfig.json",
+    "side": "client"
+  },
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/soundMap",
+    "value": [
+      {
+        "group": "windchimes:sounds/windchimes/crystal*",
+        "defaultKey": "windchimes:windchime-crystal-default",
+        "value": [
+
+          {
+            "match": "windchimes:sounds/windchimes/crystal/ambient/ambient*",
+            "tags": "ambience,environment",
+            "captionKey": "windchimes:windchime-crystal-ambient"
+          },
+          {
+            "match": "windchimes:sounds/windchimes/crystal/hit/hit*",
+            "tags": "ambience,environment",
+            "captionKey": "windchimes:windchime-crystal-hit"
+          }
+
+        ]
+      }
+    ],
+    "file": "closedcaptions:config/matchconfig.json",
+    "side": "client"
+  }
+
+]

@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "file": "windchimes-client.json",
   "settings": {
     "float": {
@@ -130,6 +130,13 @@
         "ingui": "windchimes:setting-client-debug-info",
         "weight": 105,
         "comment": "windchimes:setting-comment-client-debug-info",
+        "default": false
+      },
+      "WINDCHIMEDISABLEINDOOR": {
+        "name": "DisableIndoorMuffle",
+        "ingui": "windchimes:setting-client-disableindoor-info",
+        "weight": 115,
+        "comment": "windchimes:setting-comment-client-disableindoor-info",
         "default": false
       }
     }

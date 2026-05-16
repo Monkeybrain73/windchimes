@@ -1,0 +1,94 @@
+{
+	"windchimes:Open Wind Chime configuration menu": "Открыть меню настроек колокольчиков",
+	"windchimes:Open Wind Chime Config": "Открыть конфиг ветряных колокольчиков",
+	"windchimes:Wind Chimes Settings": "Настройки колокольчиков",
+	"windchimes:Wind Chime config hotkey pressed": "Горячая клавиша настройки колокольчиков",
+	"windchimes:Checking for ConfigLib mod...": "Проверка наличия модификации ConfigLib.",
+	"windchimes:Found!": "Найдено!",
+	"windchimes:Not found!": "Не найдено!",
+	"windchimes:ConfigLib mod found! Wind Chime default configuration GUI will be disabled.": "Мод ConfigLib найден! Стандартный графический интерфейс настройки колокольчиков будет выключен.",
+	"windchimes:ConfigLib mod not found! Wind Chime default configuration GUI will be used.": "Мод ConfigLib не найден! Будет использоваться стандартный графический интерфейс конфигурации Wind Chime.",
+
+	"windchimes:block-windchime-bamboo-brown": "Коричневый бамбуковый колокольчик",
+	"windchimes:block-windchime-bamboo-green": "Зелёный бамбуковый колокольчик",
+	"windchimes:block-windchime-wood": "Деревянный колокольчик",
+	"windchimes:block-windchime-brass": "Латунный ветряной колокольчик",
+	"windchimes:block-windchime-copper": "Медный ветряной колокольчик",
+	"windchimes:block-windchime-crystal-milkyquartz": "Молочный ветряной колокольчик",
+	"windchimes:block-windchime-crystal-rosequartz": "Розовый ветряной колокольчик",
+	"windchimes:block-windchime-crystal-smokyquartz": "Дымчатый ветряной колокольчик",
+	"windchimes:block-windchime-crystal-amethyst": "Аметистовый ветряной колокольчик",
+	"windchimes:block-windchime-crystal-olivine": "Оливиновый ветряной колокольчик",
+	"windchimes:block-windchime-bone": "Костяной ветряной колокольчик",
+	"windchimes:block-windchime-glass": "Стеклянный ветряной колокольчик",
+
+	"windchimes:block-dreamcatcher-square-*": "Квадратный ловец снов",
+	"windchimes:block-dreamcatcher-triangle-*": "Треугольный ловец снов",
+
+	"game:item-rod-brass": "Латунный стержень",
+
+	"windchimes:block-windchime-bamboo-fountain": "Фонтан из бамбуковых колокольчиков",
+	"windchimes:block-windchime-bamboo-black": "Чёрный бамбуковый колокольчик",
+	"windchimes:block-windchime-bamboo-moso": "Колокольчик из бамбука Мосо",
+
+	"windchimes:windchime-main-volume": "Общая громкость",
+	"windchimes:setting-main-volume": "Общая кромкость",
+	"windchimes:setting-comment-main-volume": "Настроить общую громкость колокольчиков.",
+
+	"windchimes:windchime-bamboo-volume": "Громкость бамбуковых колокольчиков",
+	"windchimes:setting-bamboo-volume": "Громкость бамбуковых колокольчиков",
+	"windchimes:setting-comment-bamboo-volume": "Настроить громкость бамбуковых колокольчиков.",
+
+	"windchimes:windchime-wood-volume": "Громкость деревянных колокольчиков",
+	"windchimes:setting-wood-volume": "Громкость деревянных колокольчиков",
+	"windchimes:setting-comment-wood-volume": "Настроить громкость деревянных колокольчиков.",
+
+	"windchimes:windchime-brass-volume": "Громкость латунных колокольчиков",
+	"windchimes:setting-brass-volume": "Громкость латунных колокольчиков",
+	"windchimes:setting-comment-brass-volume": "Настроить громкость латунных колокольчиков.",
+
+	"windchimes:windchime-copper-volume": "Громкость медных колокольчиков",
+	"windchimes:setting-copper-volume": "Громкость медных колокольчиков",
+	"windchimes:setting-comment-copper-volume": "Настроить громкость медных колокольчиков.",
+
+	"windchimes:windchime-crystal-volume": "Громкость кристальных колокольчиков",
+	"windchimes:setting-crystal-volume": "Громкость кристальных колокольчиков",
+	"windchimes:setting-comment-crystal-volume": "Настроить громкость кристальных колокольчиков.",
+
+	"windchimes:windchime-min-volume": "Минимальная громкость",
+	"windchimes:setting-min-volume": "Минимальная громкость",
+	"windchimes:setting-comment-min-volume": "Настроить минимальную громкость колокольчиков.",
+
+	"windchimes:windchime-indoor-volume": "Громкость в помещении",
+	"windchimes:setting-indoor-volume": "Громкость в помещении",
+	"windchimes:setting-comment-indoor-volume": "Настроить громкость колокольчиков, когда игрок в помещении.",
+
+	"windchimes:windchime-max-distance": "Максимальная дистанция звука",
+	"windchimes:setting-max-distance": "Максимальная дистанция звука",
+	"windchimes:setting-comment-max-distance": "Настроить максимальное расстояние, на котором можно услышать колокольчики.",
+
+	"windchimes:windchime-falloff-exponent": "Экспонента затухания",
+	"windchimes:setting-falloff-exponent": "Экспонента затухания",
+	"windchimes:setting-comment-falloff-exponent": "Настроить скорость затухания звука от расстояния.",
+
+	"windchimes:windchime_client_debug_info": "Информация отладки клиента",
+	"windchimes:windchime-client-debug-info": "Информация отладки клиента",
+	"windchimes:setting-client-debug-info": "Информация отладки клиента",
+	"windchimes:setting-comment-client-debug-info": "Включить клиентскую отладку колокольчиков (необходимо перезапустить сервер).",
+
+	"windchimes:windchime_server_debug_info": "Информация об серверной отладке",
+	"windchimes:windchime-server-debug-info": "Информация об серверной отладке",
+	"windchimes:setting-server-debug-info": "Информация об серверной отладке",
+	"windchimes:setting-comment-server-debug-info": "Включить серверную отладку колокольчиков (необходимо перезапустить сервер).",
+
+	"windchimes:setting-category-server-debug": "Настройки сервера",
+	"windchimes:Debug (server)": "Отладка (сервер))",
+	"windchimes:Debug (client)": "Отладка (клиент)",
+
+	"windchimes:Save": "Сохранить",
+	"windchimes:Close": "Закрыть",
+
+	"windchimes:WindChime settings saved!": "Настройки WindChime сохранены!"
+
+
+}

@@ -1,4 +1,6 @@
-﻿namespace windchimes
+﻿using Vintagestory.API.Common.Entities;
+
+namespace windchimes
 {
     public class WindChime : BlockRainAmbient
     {
@@ -18,16 +20,22 @@
 
             float baseStrength = GetChimeVolumeMultiplier(chimeType) * Configs.CConfig.WindChimeMainVolumeMultiplier;
 
-            var roomReg = world.Api.ModLoader.GetModSystem<RoomRegistry>();
-            Room room = roomReg?.GetRoomForPosition(player.Entity.Pos.AsBlockPos);
-            bool isValidLargeRoom = room != null && room.ExitCount == 0 && !room.IsSmallRoom;
+            bool IsIndoorsApprox(IWorldAccessor world, EntityPos pos)
+            {
+                // Check if player is under cover
+                int rainHeight = world.BlockAccessor.GetRainMapHeightAt(pos.AsBlockPos);
+                return rainHeight > pos.Y;
+            }
 
-            if (isValidLargeRoom)
+            bool isIndoors = IsIndoorsApprox(world, player.Entity.Pos);
+            bool disableMuffle = Configs.CConfig.DisableIndoorMuffle;
+
+            if (isIndoors && !disableMuffle)
             {
                 baseStrength *= Configs.CConfig.WindChimeIndoorVolume;
                 baseStrength = Math.Max(baseStrength, Configs.CConfig.WindChimeMinVolume);
                 DebugUtil.Verbose(world.Api,
-                    $"Player is indoors in a large room, reducing wind chime volume to {baseStrength}", DebugUtil.LogSide.Client);
+                    $"Player is indoors/under cover , reducing wind chime volume to {baseStrength}", DebugUtil.LogSide.Client);
             }
 
             double dist = player.Entity.Pos.AsBlockPos.DistanceTo(pos);

@@ -50,12 +50,12 @@
             SingleComposer.BeginChildElements();
 
             // Volume and distance sliders
-            AddSlider(SingleComposer, "windchimes:windchime-main-volume", nameof(clientConfig.WindChimeMainVolumeMultiplier), clientConfig.WindChimeMainVolumeMultiplier, 0f, 4f, 0.01f, ref y);
-            AddSlider(SingleComposer, "windchimes:windchime-bamboo-volume", nameof(clientConfig.BambooChimeVolume), clientConfig.BambooChimeVolume, 0f, 3f, 0.01f, ref y);
-            AddSlider(SingleComposer, "windchimes:windchime-wood-volume", nameof(clientConfig.WoodChimeVolume), clientConfig.WoodChimeVolume, 0f, 3f, 0.01f, ref y);
-            AddSlider(SingleComposer, "windchimes:windchime-brass-volume", nameof(clientConfig.BrassChimeVolume), clientConfig.BrassChimeVolume, 0f, 3f, 0.01f, ref y);
-            AddSlider(SingleComposer, "windchimes:windchime-copper-volume", nameof(clientConfig.CopperChimeVolume), clientConfig.CopperChimeVolume, 0f, 3f, 0.01f, ref y);
-            AddSlider(SingleComposer, "windchimes:windchime-crystal-volume", nameof(clientConfig.CrystalChimeVolume), clientConfig.CrystalChimeVolume, 0f, 3f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-main-volume", nameof(clientConfig.WindChimeMainVolumeMultiplier), clientConfig.WindChimeMainVolumeMultiplier, 0f, 5f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-bamboo-volume", nameof(clientConfig.BambooChimeVolume), clientConfig.BambooChimeVolume, 0f, 5f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-wood-volume", nameof(clientConfig.WoodChimeVolume), clientConfig.WoodChimeVolume, 0f, 5f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-brass-volume", nameof(clientConfig.BrassChimeVolume), clientConfig.BrassChimeVolume, 0f, 5f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-copper-volume", nameof(clientConfig.CopperChimeVolume), clientConfig.CopperChimeVolume, 0f, 5f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-crystal-volume", nameof(clientConfig.CrystalChimeVolume), clientConfig.CrystalChimeVolume, 0f, 5f, 0.01f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-min-volume", nameof(clientConfig.WindChimeMinVolume), clientConfig.WindChimeMinVolume, 0f, 1f, 0.01f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-indoor-volume", nameof(clientConfig.WindChimeIndoorVolume), clientConfig.WindChimeIndoorVolume, 0f, 1f, 0.01f, ref y);
             AddDistanceSlider(SingleComposer, "windchimes:windchime-max-distance", nameof(clientConfig.WindChimeMaxDistance), clientConfig.WindChimeMaxDistance, 4f, 16f, 0.5f, ref y);
@@ -66,8 +66,8 @@
             // Debug toggle
             ElementBounds toggleLabelBounds = ElementBounds.Fixed(15, y, 100, 25);
             ElementBounds toggleSwitchBounds = ElementBounds.Fixed(125, y - 4, 25, 25);
-            ElementBounds toggleServerLabelBounds = ElementBounds.Fixed(170, y, 110, 25);
-            ElementBounds toggleServerSwitchBounds = ElementBounds.Fixed(285, y - 4, 25, 25);
+            ElementBounds toggleIndoorLabelMuffle = ElementBounds.Fixed(170, y, 110, 25);
+            ElementBounds toggleIndoorSwitchBounds = ElementBounds.Fixed(285, y - 4, 25, 25);
 
             if (capi.World.Side == EnumAppSide.Client)
             {
@@ -80,13 +80,13 @@
                 {
                     if (playerRole.PrivilegeLevel == 99999)
                     {
-                        SingleComposer.AddStaticText(Lang.Get("Debug (server)"), CairoFont.WhiteSmallText(), toggleServerLabelBounds);
-                        SingleComposer.AddSwitch(OnServerDebugToggle, toggleServerSwitchBounds, "serverdebugtoggle");
-                        SingleComposer.GetSwitch("serverdebugtoggle").SetValue(serverConfig.EnableDebugLogging);
+                        SingleComposer.AddStaticText(Lang.Get("Disable indoor"), CairoFont.WhiteSmallText(), toggleIndoorLabelMuffle);
+                        SingleComposer.AddSwitch(OnClientIndoorToggle, toggleIndoorSwitchBounds, "indoordebugtoggle");
+                        SingleComposer.GetSwitch("indoordebugtoggle").SetValue(clientConfig.DisableIndoorMuffle);
                     }
                 }
                 y += spacing * 1.5;
-
+    
             }
 
             // Save/Cancel buttons
@@ -175,6 +175,11 @@
         private void OnClientDebugToggle(bool on)
         {
             clientConfig.EnableDebugLogging = on;
+        }
+
+        private void OnClientIndoorToggle(bool on)
+        {
+            clientConfig.DisableIndoorMuffle = on;
         }
 
         private bool OnSaveClicked()
