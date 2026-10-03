@@ -1,14 +1,14 @@
-{
+﻿{
   "type": "code",
   "modid": "windchimes",
   "name": "Wind Chimes",
-  "description": "Add decorative whind chimes",
+  "description": "Add decorative windchimes",
   "authors": [ "xXx_Ape_xXx" ],
   "contributors": [ "" ],
   "side": "Universal",
   "requiredOnClient": true,
   "requiredOnServer": true,
-  "version": "1.5.2",
+  "version": "1.5.3",
   "dependencies": {
     "game": "1.22.0"
   }

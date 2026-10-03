@@ -1,6 +1,4 @@
-﻿using Vintagestory.ServerMods.NoObf;
-
-namespace windchimes
+﻿namespace windchimes
 {
     public class ModSystemWindChimeClient : ModSystem
     {
@@ -38,7 +36,6 @@ namespace windchimes
 
                 base.StartClientSide(api);
             }
-
         }
 
         private bool OnHotkeyPressed(KeyCombination key)

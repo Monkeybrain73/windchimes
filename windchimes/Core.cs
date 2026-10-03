@@ -1,13 +1,15 @@
 ﻿
 [assembly: ModInfo(Const.AppId,
-                    Authors = new string[] { Const.AppAuthor },
-                    Description = "Add decorative whind chimes",
+                    Authors = new string[] { Const.AppAuthors },
+                    Description = Const.AppDescription,
                     Version = Const.AppVersion)]
 
 namespace windchimes
 {
     public sealed class Core : ModSystem
     {
+        private ICoreClientAPI capi;
+
         public override void Start(ICoreAPI api)
         {
             base.Start(api);

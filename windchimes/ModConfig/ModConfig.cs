@@ -44,15 +44,16 @@
         public class ClientConfig
         {
             public static ClientConfig Loaded { get; set; } = new ClientConfig();
-            public float WindChimeMainVolumeMultiplier { get; set; } = 1.0f;
-            public float BambooChimeVolume { get; set; } = 0.5f;
-            public float WoodChimeVolume { get; set; } = 0.5f;
-            public float BrassChimeVolume { get; set; } = 0.5f;
-            public float CopperChimeVolume { get; set; } = 0.5f;
-            public float CrystalChimeVolume { get; set; } = 0.5f;
+            public float WindChimeMainVolumeMultiplier { get; set; } = 3.0f;
+            public float BambooChimeVolume { get; set; } = 2.0f;
+            public float WoodChimeVolume { get; set; } = 2.0f;
+            public float BrassChimeVolume { get; set; } = 2.0f;
+            public float CopperChimeVolume { get; set; } = 2.0f;
+            public float CrystalChimeVolume { get; set; } = 2.0f;
+            public float WindChimeHeldVolume { get; set; } = 0.2f;
             public float WindChimeMinVolume { get; set; } = 0.05f;
-            public float WindChimeIndoorVolume { get; set; } = 0.1f; // Volume multiplier when player is indoors
-            public float WindChimeMaxDistance { get; set; } = 16f; // Max distance at which chimes can be heard
+            public float WindChimeIndoorVolume { get; set; } = 0.1f;
+            public float WindChimeMaxDistance { get; set; } = 16f;
             public float WindChimeFalloffExponent { get; set; } = 2.5f; // Exponent for distance attenuation curve (1.0 = linear, 2.0 = quadratic, etc.)
             // public float WindChimePitchFadeAmount { get; set; } = 0.25f; // Max pitch variation (+/-) based on distance
             // public float WindChimeDistanceFactor { get; set; } = 0.1f; // Volume decreases by this factor per block of distance

@@ -27,7 +27,7 @@
         private void ComposeDialog()
         {
             int insetWidth = 270;
-            int insetHeight = 580;
+            int insetHeight = 630;
 
             ElementBounds dialogBounds = ElementStdBounds.AutosizedMainDialog
                 .WithAlignment(EnumDialogArea.CenterMiddle)
@@ -56,6 +56,7 @@
             AddSlider(SingleComposer, "windchimes:windchime-brass-volume", nameof(clientConfig.BrassChimeVolume), clientConfig.BrassChimeVolume, 0f, 5f, 0.01f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-copper-volume", nameof(clientConfig.CopperChimeVolume), clientConfig.CopperChimeVolume, 0f, 5f, 0.01f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-crystal-volume", nameof(clientConfig.CrystalChimeVolume), clientConfig.CrystalChimeVolume, 0f, 5f, 0.01f, ref y);
+            AddSlider(SingleComposer, "windchimes:windchime-held-volume", nameof(clientConfig.WindChimeHeldVolume), clientConfig.WindChimeHeldVolume, 0f, 1f, 0.01f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-min-volume", nameof(clientConfig.WindChimeMinVolume), clientConfig.WindChimeMinVolume, 0f, 1f, 0.01f, ref y);
             AddSlider(SingleComposer, "windchimes:windchime-indoor-volume", nameof(clientConfig.WindChimeIndoorVolume), clientConfig.WindChimeIndoorVolume, 0f, 1f, 0.01f, ref y);
             AddDistanceSlider(SingleComposer, "windchimes:windchime-max-distance", nameof(clientConfig.WindChimeMaxDistance), clientConfig.WindChimeMaxDistance, 4f, 16f, 0.5f, ref y);
@@ -158,6 +159,7 @@
                 case nameof(Configs.ClientConfig.BrassChimeVolume): clientConfig.BrassChimeVolume = value; break;
                 case nameof(Configs.ClientConfig.CopperChimeVolume): clientConfig.CopperChimeVolume = value; break;
                 case nameof(Configs.ClientConfig.CrystalChimeVolume): clientConfig.CrystalChimeVolume = value; break;
+                case nameof(Configs.ClientConfig.WindChimeHeldVolume): clientConfig.WindChimeHeldVolume = value; break;
                 case nameof(Configs.ClientConfig.WindChimeMinVolume): clientConfig.WindChimeMinVolume = value; break;
                 case nameof(Configs.ClientConfig.WindChimeIndoorVolume): clientConfig.WindChimeIndoorVolume = value; break;
                 case nameof(Configs.ClientConfig.WindChimeMaxDistance): clientConfig.WindChimeMaxDistance = rawValue; break;

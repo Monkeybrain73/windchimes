@@ -75,6 +75,18 @@
           "step": 0.1
         }
       },
+      "WINDCHIMEHELDVOLUME": {
+        "name": "WindChimeHeldVolume",
+        "ingui": "windchimes:setting-held-volume",
+        "weight": 65,
+        "comment": "windchimes:setting-comment-held-volume",
+        "default": 0.5,
+        "range": {
+          "min": 0.0,
+          "max": 1,
+          "step": 0.01
+        }
+      },
       "WINDCHIMEMINVOLUME": {
         "name": "WindChimeMinVolume",
         "ingui": "windchimes:setting-min-volume",

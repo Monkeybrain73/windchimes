@@ -1,6 +1,4 @@
-﻿using Vintagestory.API.Common.Entities;
-
-namespace windchimes
+﻿namespace windchimes
 {
     public class WindChime : BlockRainAmbient
     {
